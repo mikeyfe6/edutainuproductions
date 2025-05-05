@@ -1,49 +1,46 @@
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://edutainuproductions.netlify.app" rel="noopener noreferrer"
+              target="_blank">
+    <img alt="Keep It Real Logo" src="https://edutainuproductions.netlify.app/eup-logo.png" width="500" />
   </a>
 </p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
 
-## 🚀 Quick start
+<br>
 
-1.  **Create a Gatsby site.**
+# Edutian U Productions
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+<br>
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+Deze website is gebouwd door [Michael Fransman](https://www.linkedin.com/in/michaelfransman/), voor Edutain U Productions uit Amsterdam.
 
-2.  **Start developing.**
+<!-- ‘Keep It Real’ is een sociaal-maatschappelijk project waarbij ervaringsdeskundige interactief aan de slag gaan met jongeren om levenslessen te leren. -->
 
-    Navigate into your new site’s directory and start it up.
+-   _Meer weten? Bekijk de website / check the website: [Edutain U Productions](https://edutainuproductions.netlify.app)_
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+<br>
 
-3.  **Open the code and start customizing!**
+---
 
-    Your site is now running at http://localhost:8000!
+<br>
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+**Deze website is gebouwd met GatsbyJS, ReactJS, GraphQl & Netlify.**
 
-4.  **Learn more**
+Powered by [Menefex](https://menefex.nl) ✨
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+<br>
 
-## 🚀 Quick start (Netlify)
+## Licence ✒️
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+0BSD, all rights reserved, Edutain U Productions 2025 ©
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+<br>
+
+---
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/70599984-530f-409e-98d5-d1dd39cc1cc8/deploy-status)](https://app.netlify.com/sites/keeptreal/deploys) <br><br>
+👨🏾‍💻 <ins>...this project</ins> <br> [![wakatime](https://wakatime.com/badge/github/mikeyfe6/edutainuproductions.svg)](https://wakatime.com/badge/github/mikeyfe6/edutainuproductions) <br>
+👨🏾‍💻 <ins>...all projects</ins> <br> [![wakatime](https://wakatime.com/badge/user/172a37f5-1ff4-4cf8-9d08-5ccbe681726b.svg)](https://wakatime.com/@172a37f5-1ff4-4cf8-9d08-5ccbe681726b)
+
+<!-- AUTO-GENERATED-CONTENT:END -->

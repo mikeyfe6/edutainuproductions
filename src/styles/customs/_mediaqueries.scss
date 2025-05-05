@@ -1,0 +1,70 @@
+@mixin mini {
+    // 368px
+    @media (width >= 23em) {
+        @content;
+    }
+}
+
+@mixin compact {
+    // 480px
+    @media (width >= 30em) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    // 640px
+    @media (width >= 40em) {
+        @content;
+    }
+}
+
+@mixin phablet {
+    // 768px
+    @media (width >= 52em) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    // 1024px
+    @media (width >= 64em) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    // 1280px
+    @media (width >= 76em) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    // 1440px
+    @media (width >= 90em) {
+        @content;
+    }
+}
+
+@mixin wide {
+    // 1600px
+    @media (width >= 100em) {
+        @content;
+    }
+}
+
+@mixin massive {
+    // 1920px
+    @media (width >= 120em) {
+        @content;
+    }
+}
+
+// Orientation-based media queries (for mobile-first)
+
+@mixin landscape {
+    @media (width >= 23em) and (width <= 64em) and (orientation: landscape) {
+        @content;
+    }
+}

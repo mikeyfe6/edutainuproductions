@@ -1,0 +1,57 @@
+@use "./customs" as *;
+@use "typography";
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    position: relative;
+
+    &:has(.example) {
+        overflow-y: hidden;
+    }
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: linear-gradient(145deg, $primary 30%, $secondary 100%);
+    min-width: rem-calc(320);
+    color: $white;
+
+    @include container(rem-calc(1300));
+}
+
+.edutain-u-productions {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    margin: rem-calc(40 0 80);
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.responsive-tag {
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: rem-calc(4 12);
+    z-index: 1000;
+    font-weight: bold;
+    text-align: center;
+    background-color: $white;
+    opacity: 0.5;
+    color: $black;
+    outline: $black 1px solid;
+
+    p {
+        font-size: rem-calc(14);
+        font-weight: bold;
+    }
+}
