@@ -11,11 +11,9 @@ html {
 
 body {
     font-family: Poppins, sans-serif;
-    background: linear-gradient(145deg, $primary 30%, $tertiary 100%);
+    background: linear-gradient(145deg, $white 30%, $primary 100%);
     min-width: rem-calc(320);
-    color: $white;
-
-    @include container(rem-calc(1300));
+    color: $tertiary;
 }
 
 .edutain-u-productions {
@@ -26,7 +24,8 @@ body {
 
 main {
     flex: 1;
-    margin: rem-calc(40 0 80);
+
+    @include container(rem-calc(1300));
 }
 
 footer {
@@ -40,12 +39,11 @@ footer {
     transform: translateX(-50%);
     padding: rem-calc(4 12);
     z-index: 1000;
-    font-weight: bold;
-    text-align: center;
-    background-color: $white;
     opacity: 0.5;
     color: $black;
+    background-color: $white;
     outline: $black 1px solid;
+    text-align: center;
 
     p {
         font-size: rem-calc(14);

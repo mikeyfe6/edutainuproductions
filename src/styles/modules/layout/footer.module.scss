@@ -2,4 +2,23 @@
 
 .footer {
     $this: &;
+
+    background: $tertiary;
+    color: $white;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include container(rem-calc(1300), rem-calc(16));
+    }
+
+    .menefex {
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: $white;
+            text-underline-offset: 3px;
+        }
+    }
 }

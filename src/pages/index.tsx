@@ -7,7 +7,11 @@ import { Seo } from "../components/seo";
 import Layout from "../components/layout";
 
 const IndexPage: React.FC<PageProps> = () => {
-    return <Layout>[Main - Index]</Layout>;
+    return (
+        <Layout>
+            <h1>Edutain U Productions</h1>
+        </Layout>
+    );
 };
 
 export default IndexPage;

@@ -1,5 +1,31 @@
 @use "../../customs" as *;
 
 .header {
-    $this: &;
+    $header: &;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include container(rem-calc(1300));
+
+    nav > ul {
+        display: flex;
+        gap: rem-calc(28);
+
+        > li {
+            a {
+                font-weight: 500;
+                padding: rem-calc(4);
+
+                @include fluid-typing(16, 18);
+
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-color: $tertiary;
+                    text-underline-offset: 3px;
+                }
+            }
+        }
+    }
 }

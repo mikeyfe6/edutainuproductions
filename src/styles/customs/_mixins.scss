@@ -2,14 +2,14 @@
 @use "functions" as *;
 @use "mediaqueries" as *;
 
-@mixin container($maxWidth: rem-calc(1400), $padding: rem-calc(32), $gap: 0) {
+@mixin container($maxWidth: rem-calc(1400), $pY: rem-calc(32), $pX: 0) {
     max-width: $maxWidth;
     margin: 0 auto;
-    padding: $gap rem-calc(20);
+    padding: $pY rem-calc(20);
     width: 100%;
 
     @include mobile {
-        padding: $gap $padding;
+        padding: $pY $pX;
     }
 }
 
