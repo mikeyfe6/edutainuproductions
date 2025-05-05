@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
 
     return (
         <footer>
-            © {currentYear} - {title}
+            [Footer] © {currentYear} - {title}
         </footer>
     );
 };

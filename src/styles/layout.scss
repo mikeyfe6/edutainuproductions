@@ -3,8 +3,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    position: relative;
 
     &:has(.example) {
         overflow-y: hidden;
@@ -13,7 +11,7 @@ html {
 
 body {
     font-family: Poppins, sans-serif;
-    background: linear-gradient(145deg, $primary 30%, $secondary 100%);
+    background: linear-gradient(145deg, $primary 30%, $tertiary 100%);
     min-width: rem-calc(320);
     color: $white;
 
@@ -23,8 +21,7 @@ body {
 .edutain-u-productions {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+    min-height: 100dvh;
 }
 
 main {

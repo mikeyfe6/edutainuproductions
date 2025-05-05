@@ -1,7 +1,7 @@
 import * as React from "react";
 
 const Header: React.FC = () => {
-    return <header>header</header>;
+    return <header>[Header]</header>;
 };
 
 export default Header;
