@@ -13,8 +13,6 @@ const Header: React.FC = () => {
                 <StaticImage
                     src="../../images/logo/eup-logo-trans.png"
                     alt="Logo"
-                    width={200}
-                    height={200}
                 />
                 {/* <span>Edutain U Productions</span> */}
             </Link>

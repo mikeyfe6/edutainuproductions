@@ -12,13 +12,14 @@
         align-items: center;
 
         @include container(rem-calc(1300), rem-calc(16));
-    }
+        @include fluid-typing(13, 16);
 
-    .menefex {
-        &:hover {
-            text-decoration: underline;
-            text-decoration-color: $white;
-            text-underline-offset: 3px;
+        .menefex {
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: $white;
+                text-underline-offset: 3px;
+            }
         }
     }
 }

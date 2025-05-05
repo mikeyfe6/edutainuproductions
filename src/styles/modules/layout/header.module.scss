@@ -9,9 +9,23 @@
 
     @include container(rem-calc(1300));
 
+    > a {
+        max-width: rem-calc(150);
+
+        @include phablet {
+            max-width: rem-calc(200);
+        }
+    }
+
     nav > ul {
         display: flex;
-        gap: rem-calc(28);
+        flex-direction: column;
+        gap: rem-calc(8);
+
+        @include phablet {
+            flex-direction: row;
+            gap: rem-calc(16);
+        }
 
         > li {
             a {
