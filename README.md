@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://edutainuproductions.netlify.app" rel="noopener noreferrer"
               target="_blank">
-    <img alt="Keep It Real Logo" src="https://edutainuproductions.netlify.app/eup-logo.png" width="500" />
+    <img alt="Edutain U Productions Logo" src="https://edutainuproductions.netlify.app/eup-logo.jpeg" width="500" />
   </a>
 </p>
 
@@ -39,7 +39,7 @@ Powered by [Menefex](https://menefex.nl) ✨
 
 ---
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/70599984-530f-409e-98d5-d1dd39cc1cc8/deploy-status)](https://app.netlify.com/sites/keeptreal/deploys) <br><br>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0b069957-31b9-483e-b881-7be3a637b730/deploy-status)](https://app.netlify.com/sites/edutainuproductions/deploys) <br><br>
 👨🏾‍💻 <ins>...this project</ins> <br> [![wakatime](https://wakatime.com/badge/github/mikeyfe6/edutainuproductions.svg)](https://wakatime.com/badge/github/mikeyfe6/edutainuproductions) <br>
 👨🏾‍💻 <ins>...all projects</ins> <br> [![wakatime](https://wakatime.com/badge/user/172a37f5-1ff4-4cf8-9d08-5ccbe681726b.svg)](https://wakatime.com/@172a37f5-1ff4-4cf8-9d08-5ccbe681726b)
 
