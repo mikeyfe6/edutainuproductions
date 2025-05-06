@@ -5,7 +5,7 @@
 @mixin container(
     $maxWidth: rem-calc(1400),
     $pY: rem-calc(32),
-    $pX: rem-calc(16)
+    $pX: rem-calc(20)
 ) {
     max-width: $maxWidth;
     margin: 0 auto;
@@ -45,7 +45,8 @@
     margin-right: -50vw;
 }
 
-@mixin border-radius($radius: 3px) {
+@mixin border-radius($radius: 3px, $overflow: hidden) {
+    overflow: $overflow;
     border-radius: $radius;
 }
 

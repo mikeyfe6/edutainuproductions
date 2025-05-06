@@ -12,7 +12,7 @@ const Header: React.FC = () => {
             <Link to="/">
                 <StaticImage
                     src="../../images/logo/eup-logo-trans.png"
-                    alt="Logo"
+                    alt="Edutain U Productions Logo"
                 />
                 {/* <span>Edutain U Productions</span> */}
             </Link>

@@ -177,3 +177,13 @@ h6 {
     margin-bottom: rem-calc(8);
     font-weight: 600;
 }
+
+p {
+    max-width: 70ch;
+
+    @include fluid-typing(16, 18);
+
+    &:not(:last-child) {
+        margin-bottom: rem-calc(16);
+    }
+}

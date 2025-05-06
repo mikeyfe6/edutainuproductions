@@ -12,10 +12,10 @@ const Footer: React.FC = () => {
     return (
         <footer className={footerStyles.footer}>
             <div>
-                <p>
+                <span>
                     © {currentYear} - {title}
-                </p>
-                <p>
+                </span>
+                <span>
                     Webcrafted by{" "}
                     <a
                         href="https://menefex.nl"
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                     >
                         Menefex
                     </a>
-                </p>
+                </span>
             </div>
         </footer>
     );

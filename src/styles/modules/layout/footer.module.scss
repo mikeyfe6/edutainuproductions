@@ -11,7 +11,7 @@
         justify-content: space-between;
         align-items: center;
 
-        @include container(rem-calc(1300), rem-calc(16));
+        @include container(rem-calc(1300), rem-calc(8));
         @include fluid-typing(13, 16);
 
         .menefex {

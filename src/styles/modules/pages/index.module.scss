@@ -1,0 +1,21 @@
+@use "../../customs" as *;
+
+.home {
+    display: flex;
+    gap: rem-calc(32);
+    align-items: center;
+    flex-direction: column;
+
+    @include phablet {
+        flex-direction: row;
+        gap: rem-calc(64);
+    }
+
+    > * {
+        flex: 1;
+    }
+
+    .image {
+        outline: 3px solid $secondary;
+    }
+}
