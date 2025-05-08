@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                     © {currentYear} - {title}
                 </span>
                 <span>
-                    Webcrafted by{" "}
+                    {"</>"} by{" "}
                     <a
                         href="https://menefex.nl"
                         rel="noopener noreferrer"
