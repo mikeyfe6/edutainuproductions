@@ -187,3 +187,18 @@ p {
         margin-bottom: rem-calc(16);
     }
 }
+
+ul {
+    &:not(:last-child) {
+        margin-bottom: rem-calc(16);
+    }
+
+    li {
+        @include fluid-typing(16, 18);
+    }
+}
+
+small {
+    display: block;
+    margin-bottom: rem-calc(16);
+}
