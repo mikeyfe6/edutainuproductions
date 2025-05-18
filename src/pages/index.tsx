@@ -15,7 +15,62 @@ const IndexPage: React.FC<PageProps> = () => {
         <Layout>
             <div className={indexStyles.home}>
                 <div>
-                    <h1>Edutain U Productions</h1>
+                    <p>
+                        Van theaterproducties tot festivals, van cultuureducatie
+                        tot internationale uitwisselingsprogramma’s: Otmar
+                        Watson is inzetbaar als projectleider, producent, coach
+                        of conceptontwikkelaar. Otmar Watson voert opdrachten
+                        uit voor o.a. de Gemeente Amsterdam, Gemeente Rotterdam,
+                        culturele instellingen, scholen en grassroots
+                        organisaties aan betekenisvolle projecten die
+                        geschiedenis zichtbaar maken en nieuw talent een podium
+                        geven.
+                    </p>
+
+                    <p>
+                        Met Edutain U Productions kies je voor een partner die
+                        visie koppelt aan daadkracht, en creativiteit aan
+                        verantwoordelijkheid.
+                    </p>
+
+                    <h2>Biografie</h2>
+
+                    <h3>Over Otmar Watson</h3>
+
+                    <p>
+                        Otmar Watson is een veelzijdige cultureel ondernemer,
+                        producent en coach, actief op het snijvlak van kunst,
+                        erfgoed, empowerment en educatie. Als oprichter van
+                        Edutain U Productions voert hij uiteenlopende opdrachten
+                        uit voor onder andere de Gemeente Amsterdam en Gemeente
+                        Rotterdam. Met een sterke focus op impact en
+                        inclusiviteit ontwikkelt en leidt hij projecten die
+                        gemeenschappen verbinden en jong talent versterken.
+                    </p>
+                    <p>
+                        Otmar heeft zich acht jaar lang ingezet als programmeur
+                        van de Black Achievement Month en vervulde daarnaast
+                        twee jaar de rol van projectleider van dit nationale
+                        erfgoedprogramma. Hij is directeur van Stichting Untold
+                        en zakelijk leider van Stichting Eternity Percussion,
+                        waarmee hij de Afro-Nederlandse geschiedenis,
+                        spiritualiteit en artistieke expressie op inspirerende
+                        wijze tot leven brengt, zowel nationaal als
+                        internationaal.
+                    </p>
+                    <p>
+                        Naast zijn werk in de culturele sector is Otmar ook
+                        enkele uren per week werkzaam als Coördinator Kwaliteit
+                        en Ontwikkeling Jongerenwerk bij Vivell, waar hij
+                        bijdraagt aan de professionalisering van het
+                        jongerenwerk en het versterken van perspectieven van
+                        jongeren.
+                    </p>
+                    <p>
+                        Met zijn verbindende kracht, brede ervaring en
+                        inhoudelijke diepgang is Otmar Watson een sleutelfiguur
+                        binnen de culturele en maatschappelijke sector.
+                    </p>
                     <h2>Expertiseprofiel</h2>
                     <p>
                         Ik ben gespecialiseerd in het ontwikkelen, begeleiden en
@@ -175,12 +230,12 @@ const IndexPage: React.FC<PageProps> = () => {
                         betroffen.
                     </p>
                 </div>
-                <div className={indexStyles.image}>
+                {/* <div className={indexStyles.image}>
                     <StaticImage
                         src="../images/otmarwatson.jpg"
                         alt="Otmar Watson"
                     />
-                </div>
+                </div> */}
             </div>
         </Layout>
     );

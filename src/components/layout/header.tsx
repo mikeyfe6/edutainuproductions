@@ -9,29 +9,57 @@ import * as headerStyles from "../../styles/modules/layout/header.module.scss";
 const Header: React.FC = () => {
     return (
         <header className={headerStyles.header}>
-            <Link to="/">
+            <div className={headerStyles.hero}>
+                <div className={headerStyles.menu}>
+                    <Link to="/">
+                        <StaticImage
+                            src="../../images/logo/eup-logo-trans.png"
+                            alt="Edutain U Productions Logo"
+                        />
+                    </Link>
+                    <nav>
+                        <ul>
+                            <li>
+                                <Link to="/">Untold & Eternity</Link>
+                            </li>
+                            <li>
+                                <Link to="/">Reisverhalen</Link>
+                            </li>
+                            <li>
+                                <Link to="/">Bun Tranga</Link>
+                            </li>
+                            <li>
+                                <Link to="/">Media</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div className={headerStyles.intro}>
+                    <h1>Edutain U Productions</h1>
+                    <p>
+                        Welkom bij Edutain U Productions Waar educatie en
+                        entertainment samenkomen voor impactvolle culturele
+                        beleving
+                    </p>
+                    <p>
+                        Edutain U Productions is het creatieve freelancebedrijf
+                        van Otmar Watson, actief op het snijvlak van kunst,
+                        cultuur, erfgoed en empowerment. Vanuit jarenlange
+                        ervaring binnen de culturele sector realiseert Edutain U
+                        Productions projecten die verbinden, verdiepen en
+                        versterken. Altijd met een focus op inclusiviteit,
+                        erfgoed en maatschappelijke betrokkenheid.
+                    </p>
+                </div>
+            </div>
+
+            <div className={headerStyles.image}>
                 <StaticImage
-                    src="../../images/logo/eup-logo-trans.png"
-                    alt="Edutain U Productions Logo"
+                    src="../../images/otmarwatson.jpg"
+                    alt="Otmar Watson"
                 />
-                {/* <span>Edutain U Productions</span> */}
-            </Link>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Untold & Eternity</Link>
-                    </li>
-                    <li>
-                        <Link to="/">Reisverhalen</Link>
-                    </li>
-                    <li>
-                        <Link to="/">Bun Tranga</Link>
-                    </li>
-                    <li>
-                        <Link to="/">Media</Link>
-                    </li>
-                </ul>
-            </nav>
+            </div>
         </header>
     );
 };

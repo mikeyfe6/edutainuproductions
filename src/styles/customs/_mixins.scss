@@ -1,9 +1,10 @@
 @use "colors" as *;
 @use "functions" as *;
 @use "mediaqueries" as *;
+@use "variables" as *;
 
 @mixin container(
-    $maxWidth: rem-calc(1400),
+    $maxWidth: rem-calc($layout),
     $pY: rem-calc(32),
     $pX: rem-calc(20)
 ) {

@@ -5,42 +5,79 @@
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
-    @include container(rem-calc(1300));
+    @include container($pY: 0);
 
-    > a {
-        max-width: rem-calc(150);
+    > .hero {
+        > .menu {
+            display: flex;
+            gap: rem-calc(32);
+            padding: rem-calc(16 0);
+            align-items: center;
+            height: fit-content;
 
-        @include phablet {
-            max-width: rem-calc(200);
-        }
-    }
+            > a {
+                max-width: rem-calc(150);
 
-    nav > ul {
-        display: flex;
-        flex-direction: column;
-        gap: rem-calc(8);
+                @include phablet {
+                    max-width: rem-calc(200);
+                }
+            }
 
-        @include phablet {
-            flex-direction: row;
-            gap: rem-calc(16);
-        }
+            > nav {
+                // background-color: $secondary;
+                // color: $white;
+                padding: rem-calc(16) rem-calc(32);
+                height: fit-content;
 
-        > li {
-            a {
-                font-weight: 500;
-                padding: rem-calc(4);
+                > ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: rem-calc(8);
 
-                @include fluid-typing(16, 18);
+                    @include phablet {
+                        flex-direction: row;
+                        gap: rem-calc(16);
+                    }
 
-                &:hover {
-                    text-decoration: underline;
-                    text-decoration-thickness: 2px;
-                    text-decoration-color: $secondary;
-                    text-underline-offset: 3px;
+                    > li {
+                        a {
+                            font-weight: 500;
+                            padding: rem-calc(4);
+
+                            @include fluid-typing(16, 20);
+
+                            &:hover {
+                                text-decoration: underline;
+                                text-decoration-thickness: 2px;
+                                text-decoration-color: $secondary;
+                                text-underline-offset: 3px;
+                            }
+                        }
+                    }
                 }
             }
         }
+
+        > .intro {
+            margin-top: rem-calc(32);
+
+            h1 {
+                border-left: 5px solid $primary;
+                padding-left: rem-calc(16);
+            }
+
+            p {
+                max-width: 60ch;
+
+                @include fluid-typing(16, 22);
+            }
+        }
+    }
+
+    > .image {
+        max-width: 450px;
+        border-radius: 0 0 50px 50px;
+        overflow: hidden;
     }
 }
