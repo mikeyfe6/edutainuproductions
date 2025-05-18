@@ -51,6 +51,27 @@ const Header: React.FC = () => {
                         versterken. Altijd met een focus op inclusiviteit,
                         erfgoed en maatschappelijke betrokkenheid.
                     </p>
+
+                    <p>
+                        <b>
+                            Van theaterproducties tot festivals, van
+                            cultuureducatie tot internationale
+                            uitwisselingsprogramma’s:
+                        </b>{" "}
+                        Otmar Watson is inzetbaar als projectleider, producent,
+                        coach of conceptontwikkelaar. Otmar Watson voert
+                        opdrachten uit voor o.a. de Gemeente Amsterdam, Gemeente
+                        Rotterdam, culturele instellingen, scholen en grassroots
+                        organisaties aan betekenisvolle projecten die
+                        geschiedenis zichtbaar maken en nieuw talent een podium
+                        geven.
+                    </p>
+
+                    <p>
+                        Met Edutain U Productions kies je voor een partner die
+                        visie koppelt aan daadkracht, en creativiteit aan
+                        verantwoordelijkheid.
+                    </p>
                 </div>
 
                 <div className={headerStyles.buttons}>

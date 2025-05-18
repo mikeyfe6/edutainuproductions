@@ -77,7 +77,7 @@
     @if $type == 1 {
         background: $primary;
         padding: rem-calc(17 24 17);
-        border: 1px solid $black;
+        border: 2px solid $black;
         position: relative;
         background-color: transparent;
         user-select: none;

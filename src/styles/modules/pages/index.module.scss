@@ -1,6 +1,27 @@
 @use "../../customs" as *;
 
-.lead {
+.biography {
+    background-color: $black;
+    color: rgba($white, 0.875);
+
+    @include full-width;
+
+    > div {
+        @include container($pY: 0);
+
+        > div {
+            column-count: 2;
+            column-gap: rem-calc(160);
+            column-rule: 2px solid $primary;
+
+            p {
+                break-inside: avoid;
+            }
+        }
+    }
+}
+
+.expertise {
     background-color: $primary;
     color: $black;
 
@@ -8,24 +29,18 @@
 
     > div {
         @include container($pY: 0);
-
-        p {
-            @include fluid-typing(18, 22);
-        }
     }
 }
 
 .services {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    h3 {
+    h2 {
         background-color: $black;
         color: $white;
-        padding: rem-calc(16 32);
-
-        @include fluid-typing(24, 28);
+        padding: rem-calc(24 32);
     }
 
     ul {
@@ -58,97 +73,102 @@
             &:nth-child(1) {
                 grid-row: 1;
                 grid-column: 1;
-                border-radius: 15px 15px 0;
+                border-radius: 17.5px 17.5px 0;
             }
 
             &:nth-child(2) {
                 grid-row: 1;
                 grid-column: 2;
-                border-radius: 15px 15px 15px 0;
+                border-radius: 17.5px 17.5px 17.5px 0;
             }
 
             &:nth-child(3) {
                 grid-row: 2;
                 grid-column: 1 / span 2;
                 justify-self: center;
-                border-radius: 15px;
+                border-radius: 17.5px;
             }
 
             &:nth-child(4) {
                 grid-row: 3;
                 grid-column: 1;
-                border-radius: 15px 0 15px 15px;
+                border-radius: 17.5px 0 17.5px 17.5px;
             }
 
             &:nth-child(5) {
                 grid-row: 3;
                 grid-column: 2;
-                border-radius: 0 15px 15px;
+                border-radius: 0 17.5px 17.5px;
             }
         }
     }
 }
 
-.biography {
-    background-color: $black;
-    color: $white;
-
-    @include full-width;
-
+.consultancy {
     > div {
-        @include container($pY: 0);
+        display: flex;
 
-        > div {
-            column-count: 2;
-            column-gap: rem-calc(64);
-            column-rule: 2px solid $primary;
+        > .advice {
+            flex: 0.6;
+            border: 2px solid $black;
+            padding: rem-calc(32);
+            border-radius: 17.5px 0 0 17.5px;
+        }
+
+        > .pricing {
+            flex: 0.4;
+            padding: rem-calc(32);
+            background-color: $black;
+            color: $white;
+            border-radius: 0 17.5px 17.5px 0;
         }
     }
 }
 
 .trackrecord {
     background-color: $secondary;
-    color: $white;
 
     @include full-width;
 
     > div {
         @include container($pY: 0);
 
-        li {
-            @include fluid-typing(18, 22);
+        h2 {
+            margin-bottom: rem-calc(32);
+            color: $white;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: rem-calc(16);
+
+            li {
+                background-color: $white;
+                padding: rem-calc(20 32);
+                flex: 20%;
+                width: 100%;
+                cursor: default;
+
+                @include fluid-typing(18, 20);
+
+                &:hover {
+                    outline: 2px solid $black;
+                }
+
+                b {
+                    color: $secondary;
+                }
+            }
         }
     }
 }
 
-// .image {
-//     --border: 6px; /* border thickness */
-//     --size: 60px; /* size of the corner */
-//     --gap: 14px; /* the gap */
-//     --color: #faa31b;
-
-//     padding: calc(var(--border) + var(--gap));
-//     background-image: conic-gradient(
-//             from 90deg at top var(--border) left var(--border),
-//             #0000 25%,
-//             var(--color) 0
-//         ),
-//         conic-gradient(
-//             from -90deg at bottom var(--border) right var(--border),
-//             #0000 25%,
-//             var(--color) 0
-//         );
-//     background-position: var(--position, 0%) var(--position, 0%),
-//         calc(100% - var(--position, 0%)) calc(100% - var(--position, 0%));
-//     background-size: var(--size) var(--size);
-//     background-repeat: no-repeat;
-//     transition: background-position 0.3s var(--transition, 0.3s),
-//         background-size 0.3s calc(0.3s - var(--transition, 0.3s));
-
-//     &:hover {
-//         background-size: calc(100% - var(--gap)) calc(100% - var(--gap));
-
-//         --position: calc(var(--gap) / 2);
-//         --transition: 0s;
-//     }
-// }
+.fraternity {
+    > div {
+        background-color: $black;
+        color: $white;
+        padding: rem-calc(24 32);
+        border: 2px solid $black;
+    }
+}

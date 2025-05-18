@@ -85,10 +85,13 @@
     }
 
     > .image {
-        max-width: 450px;
+        max-width: rem-calc(475);
 
         img {
             border-radius: 0 0 50px 50px;
+            border-left: 5px solid $primary;
+            border-right: 5px solid $secondary;
+            border-bottom: 5px solid $black;
             overflow: hidden;
         }
     }
