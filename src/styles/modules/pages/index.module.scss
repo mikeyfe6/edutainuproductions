@@ -106,6 +106,21 @@
     }
 }
 
+.trackrecord {
+    background-color: $secondary;
+    color: $white;
+
+    @include full-width;
+
+    > div {
+        @include container($pY: 0);
+
+        li {
+            @include fluid-typing(18, 22);
+        }
+    }
+}
+
 // .image {
 //     --border: 6px; /* border thickness */
 //     --size: 60px; /* size of the corner */

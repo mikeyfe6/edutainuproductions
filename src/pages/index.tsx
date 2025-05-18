@@ -110,44 +110,55 @@ const IndexPage: React.FC<PageProps> = () => {
                 </p>
             </section>
 
-            <section>
-                <h2>Trackrecord (final versie)</h2>
-                <ul>
-                    <li>• Directeur en artistiek leider – Stichting Untold</li>
-                    <li>• Zakelijk leider – Stichting Eternity Percussion</li>
-                    <li>
-                        • Programmeur & projectleider – Black Achievement Month
-                    </li>
-                    <li>• Projectleider & programmeur – Swazoom</li>
-                    <li>• Coördinator Kwaliteit en Ontwikkeling - Vivell</li>
-                    <li>
-                        • Lid Stuurgroep Regisseur Kunst & Cultuur Zuidoost –
-                        Gemeente Amsterdam
-                    </li>
-                    <li>
-                        • Commissielid Adviescommissie Cultuur – Gemeente
-                        Rotterdam
-                    </li>
-                    <li>• Redactielid – Cultuurkrant NL</li>
-                    <li>• Bestuurslid – Broos Instituut</li>
-                    <li>• Bestuurslid – Theater voor Keti Koti</li>
-                    <li>• Bestuurslid – Tolhuistuin</li>
-                    <li>
-                        • Projectleider In The Picture Festival – Bijlmer
-                        Parktheater
-                    </li>
-                    <li>• Projectleider – Dag van 1000 Culturen</li>
-                    <li>
-                        • Coördinator Educatie en Informatie – stichting
-                        Brotherhood
-                    </li>
-                    <li>• Mede-oprichter – Stichting Eternity Percussion</li>
-                    <li>• Oprichter – Stichting Untold</li>
-                    <li>
-                        • Kernlid en mede-oprichter – Studentenvereniging Bun
-                        Tranga
-                    </li>
-                </ul>
+            <section className={indexStyles.trackrecord}>
+                <div>
+                    <h2>Trackrecord</h2>
+                    <ul>
+                        <li>
+                            • Directeur en artistiek leider – Stichting Untold
+                        </li>
+                        <li>
+                            • Zakelijk leider – Stichting Eternity Percussion
+                        </li>
+                        <li>
+                            • Programmeur & projectleider – Black Achievement
+                            Month
+                        </li>
+                        <li>• Projectleider & programmeur – Swazoom</li>
+                        <li>
+                            • Coördinator Kwaliteit en Ontwikkeling - Vivell
+                        </li>
+                        <li>
+                            • Lid Stuurgroep Regisseur Kunst & Cultuur Zuidoost
+                            – Gemeente Amsterdam
+                        </li>
+                        <li>
+                            • Commissielid Adviescommissie Cultuur – Gemeente
+                            Rotterdam
+                        </li>
+                        <li>• Redactielid – Cultuurkrant NL</li>
+                        <li>• Bestuurslid – Broos Instituut</li>
+                        <li>• Bestuurslid – Theater voor Keti Koti</li>
+                        <li>• Bestuurslid – Tolhuistuin</li>
+                        <li>
+                            • Projectleider In The Picture Festival – Bijlmer
+                            Parktheater
+                        </li>
+                        <li>• Projectleider – Dag van 1000 Culturen</li>
+                        <li>
+                            • Coördinator Educatie en Informatie – stichting
+                            Brotherhood
+                        </li>
+                        <li>
+                            • Mede-oprichter – Stichting Eternity Percussion
+                        </li>
+                        <li>• Oprichter – Stichting Untold</li>
+                        <li>
+                            • Kernlid en mede-oprichter – Studentenvereniging
+                            Bun Tranga
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <section>
