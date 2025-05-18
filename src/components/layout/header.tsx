@@ -38,7 +38,7 @@ const Header: React.FC = () => {
                 <div className={headerStyles.intro}>
                     <h1>Edutain U Productions</h1>
                     <p>
-                        Welkom bij Edutain U Productions Waar educatie en
+                        <b>Welkom bij Edutain U Productions</b> waar educatie en
                         entertainment samenkomen voor impactvolle culturele
                         beleving
                     </p>
