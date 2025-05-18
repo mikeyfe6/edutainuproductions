@@ -1,6 +1,7 @@
 @use "colors" as *;
 @use "functions" as *;
 @use "mediaqueries" as *;
+@use "utils" as *;
 @use "variables" as *;
 
 @mixin container(
@@ -33,7 +34,7 @@
     @include smooth-trans;
 
     &:hover {
-        text-decoration-color: $tertiary;
+        text-decoration-color: $black;
     }
 }
 
@@ -65,19 +66,52 @@
 
 @mixin box-shadow($type: 1) {
     @if $type == 1 {
-        box-shadow: 0 0 1em rgba(0 0 0 / 10%);
+        box-shadow: 0 0 1em rgb(0 0 0 / 10%);
     } @else if $type == 2 {
-        box-shadow: 0 4px 4px 0 rgba(172 178 185 / 50%),
-            0 0 8px 0 rgba(172 178 185 / 50%);
+        box-shadow: 0 4px 4px 0 rgb(172 178 185 / 50%),
+            0 0 8px 0 rgb(172 178 185 / 50%);
     }
 }
 
 @mixin button($type: 1) {
     @if $type == 1 {
         background: $primary;
+        padding: rem-calc(17 24 17);
+        border: 1px solid $black;
+        position: relative;
+        background-color: transparent;
+        user-select: none;
+        touch-action: manipulation;
+        color: $white;
+        font-weight: 500;
+
+        @include fluid-typing(18, 20);
+
+        &::after {
+            content: "";
+            background-color: $secondary;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            top: rem-calc(7);
+            left: rem-calc(7);
+            transition: 0.2s;
+        }
+
+        &:hover::after {
+            top: 0;
+            left: 0;
+        }
+
+        // @media (min-width: 768px) {
+        //     .button-52 {
+        //         padding: 13px 50px 13px;
+        //     }
+        // }
     } @else if $type == 2 {
         background: $secondary;
     } @else if $type == 3 {
-        background: $tertiary;
+        background: $black;
     }
 }

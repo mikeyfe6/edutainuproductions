@@ -183,9 +183,9 @@ h6 {
 }
 
 p {
-    max-width: 70ch;
+    max-width: 80ch;
 
-    @include fluid-typing(16, 18);
+    @include fluid-typing(18, 20);
 
     &:not(:last-child) {
         margin-bottom: rem-calc(16);

@@ -13,7 +13,9 @@ body {
     font-family: Poppins, sans-serif;
     background: linear-gradient(145deg, $white 30%, rgba($primary, 0.375) 100%);
     min-width: rem-calc(320);
-    color: $tertiary;
+    line-height: 1.55;
+    letter-spacing: 0.2px;
+    color: $black;
 }
 
 .edutain-u-productions {
@@ -30,6 +32,10 @@ main {
 
 footer {
     flex-shrink: 0;
+}
+
+section {
+    padding: rem-calc(96 0);
 }
 
 .responsive-tag {

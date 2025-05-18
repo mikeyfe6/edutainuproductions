@@ -25,8 +25,6 @@
             }
 
             > nav {
-                // background-color: $secondary;
-                // color: $white;
                 padding: rem-calc(16) rem-calc(32);
                 height: fit-content;
 
@@ -65,19 +63,33 @@
             h1 {
                 border-left: 5px solid $primary;
                 padding-left: rem-calc(16);
+                margin-bottom: rem-calc(24);
             }
 
             p {
                 max-width: 60ch;
 
-                @include fluid-typing(16, 22);
+                @include fluid-typing(16, 21);
+            }
+        }
+
+        .buttons {
+            display: flex;
+            gap: rem-calc(16);
+            margin-top: rem-calc(32);
+
+            > .button {
+                @include button;
             }
         }
     }
 
     > .image {
         max-width: 450px;
-        border-radius: 0 0 50px 50px;
-        overflow: hidden;
+
+        img {
+            border-radius: 0 0 50px 50px;
+            overflow: hidden;
+        }
     }
 }

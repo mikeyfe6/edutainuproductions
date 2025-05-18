@@ -52,6 +52,15 @@ const Header: React.FC = () => {
                         erfgoed en maatschappelijke betrokkenheid.
                     </p>
                 </div>
+
+                <div className={headerStyles.buttons}>
+                    <Link to="/" className={headerStyles.button}>
+                        Meer weten
+                    </Link>
+                    <Link to="/" className={headerStyles.button}>
+                        Contact
+                    </Link>
+                </div>
             </div>
 
             <div className={headerStyles.image}>
