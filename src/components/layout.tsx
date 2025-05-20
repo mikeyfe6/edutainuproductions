@@ -1,15 +1,23 @@
 import * as React from "react";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {} from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import {
     faSquareInstagram,
     faFacebookF,
     faLinkedinIn,
+    faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faSquareInstagram, faFacebookF, faLinkedinIn);
+library.add(
+    faSquareInstagram,
+    faFacebookF,
+    faLinkedinIn,
+    faWhatsapp,
+    faPaperPlane,
+    faPhone
+);
 
 import Header from "./layout/header";
 import Footer from "./layout/footer";

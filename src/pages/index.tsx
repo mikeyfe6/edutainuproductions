@@ -5,6 +5,7 @@ import type { HeadFC, PageProps } from "gatsby";
 import { Seo } from "../components/seo";
 
 import Layout from "../components/layout";
+import Form from "../components/forms/form";
 
 import * as indexStyles from "../styles/modules/pages/index.module.scss";
 
@@ -239,6 +240,8 @@ const IndexPage: React.FC<PageProps> = () => {
                     </p>
                 </div>
             </section>
+
+            <Form />
         </Layout>
     );
 };

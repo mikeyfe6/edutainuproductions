@@ -1,7 +1,20 @@
 /* Optimized CSS Reset (2025) - Combines Normalize.css, New CSS Reset, and modern best practices */
 
 /* 1️⃣ Universal Reset - Resets everything except critical elements */
-*:where(:not(html, iframe, canvas, img, svg, video, audio, svg *, symbol *)) {
+*:where(
+        :not(
+                html,
+                iframe,
+                canvas,
+                img,
+                svg,
+                video,
+                audio,
+                svg *,
+                symbol *,
+                input
+            )
+    ) {
     all: unset;
     display: revert;
 }

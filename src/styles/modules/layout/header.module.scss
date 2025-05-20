@@ -7,7 +7,7 @@
     justify-content: space-between;
     gap: rem-calc(96);
 
-    @include container($pY: 0);
+    @include container($pT: 0, $pB: rem-calc(64));
 
     > .hero {
         width: 100%;
@@ -52,7 +52,7 @@
                 > hr {
                     width: 100%;
                     height: 2px;
-                    background-color: $black;
+                    background-color: $primary;
                     margin: rem-calc(8 0);
                 }
 

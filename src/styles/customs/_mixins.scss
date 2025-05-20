@@ -6,16 +6,18 @@
 
 @mixin container(
     $maxWidth: rem-calc($layout),
-    $pY: rem-calc(32),
-    $pX: rem-calc(20)
+    $pT: rem-calc(32),
+    $pR: rem-calc(20),
+    $pB: rem-calc(32),
+    $pL: rem-calc(20)
 ) {
     max-width: $maxWidth;
     margin: 0 auto;
-    padding: $pY rem-calc(20);
+    padding: $pT rem-calc(20) $pB;
     width: 100%;
 
     @include mobile {
-        padding: $pY $pX;
+        padding: $pT $pR $pB $pL;
     }
 }
 
@@ -52,7 +54,7 @@
     border-radius: $radius;
 }
 
-@mixin underline($offset: 7px, $thickness: 1px, $color: $primary) {
+@mixin underline($offset: 3px, $thickness: 2px, $color: $secondary) {
     text-underline-offset: $offset;
     text-decoration: underline $thickness solid $color;
 }
@@ -74,7 +76,6 @@
 }
 
 @mixin button($type: 1) {
-    background: $primary;
     padding: rem-calc(17 24 17);
     position: relative;
     background-color: transparent;
@@ -83,8 +84,6 @@
     color: $white;
     font-weight: 500;
 
-    @include fluid-typing(18, 20);
-
     &::after {
         content: "";
         background-color: $secondary;
@@ -92,8 +91,8 @@
         z-index: -1;
         position: absolute;
         height: 100%;
-        top: rem-calc(7);
-        left: rem-calc(7);
+        top: rem-calc(10);
+        left: rem-calc(10);
         transition: 0.2s;
     }
 
@@ -107,4 +106,6 @@
     } @else if $type == 2 {
         border: 2px solid $white;
     }
+
+    @include fluid-typing(18, 20);
 }

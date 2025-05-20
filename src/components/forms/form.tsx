@@ -1,0 +1,231 @@
+import * as React from "react";
+
+import { navigate, Link } from "gatsby";
+
+import axios from "axios";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import * as formStyles from "../../styles/modules/forms/form.module.scss";
+
+const Form: React.FC = () => {
+    const [formData, setFormData] = React.useState({
+        firstName: "",
+        lastName: "",
+        company: "",
+        phone: "",
+        email: "",
+        message: "",
+    });
+
+    const [isSubmitting, setIsSubmitting] = React.useState(false);
+
+    const handleChange = (
+        event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
+        const { name, value } = event.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+    };
+
+    const handleSubmit = async (
+        event: React.FormEvent<HTMLFormElement>,
+        form: HTMLFormElement | null
+    ) => {
+        event.preventDefault();
+        if (!form) return;
+        setIsSubmitting(true);
+
+        try {
+            const encodedData = new URLSearchParams(
+                new FormData(form) as any
+            ).toString();
+
+            if (window.location.hostname === "localhost") {
+                console.log("Form data:", encodedData);
+                alert("Form submission simulated (check console). ");
+                setIsSubmitting(false);
+                return;
+            }
+
+            await axios.post("/", encodedData, {
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+            });
+
+            navigate("/success/");
+        } catch (error) {
+            console.error("Form submission error:", error);
+            alert("Er is iets misgegaan bij het versturen van het formulier.");
+        }
+
+        setIsSubmitting(false);
+    };
+
+    return (
+        <section className={formStyles.form}>
+            <div>
+                <div>
+                    <h2>Kennismaken?</h2>
+                    <p>
+                        <b>Ik sta klaar om jou te helpen!</b>
+                    </p>
+
+                    <ul>
+                        <li>
+                            <a href="">
+                                <FontAwesomeIcon
+                                    icon={["fas", "paper-plane"]}
+                                    size="xl"
+                                />
+                            </a>
+                            <p> otmar.watson@gmail.com</p>
+                        </li>
+                        <li>
+                            <a href="">
+                                <FontAwesomeIcon
+                                    icon={["fas", "phone"]}
+                                    size="xl"
+                                />
+                            </a>
+                            <p>0612345678</p>
+                        </li>
+                        <li>
+                            <a href="">
+                                <FontAwesomeIcon
+                                    icon={["fab", "whatsapp"]}
+                                    size="xl"
+                                />
+                            </a>
+                            <p>0612345678</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <form
+                    name="kir-form"
+                    method="post"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                    onSubmit={(event) =>
+                        handleSubmit(event, document.querySelector("form"))
+                    }
+                >
+                    <input type="hidden" name="bot-field" />
+                    <input type="hidden" name="form-name" value="kir-form" />
+
+                    <div>
+                        <label htmlFor="formFirstName">Voornaam</label>
+                        <input
+                            type="text"
+                            name="firstName"
+                            id="formFirstName"
+                            placeholder="Voornaam *"
+                            value={formData.firstName}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="formLastName">Achternaam</label>
+                        <input
+                            type="text"
+                            name="lastName"
+                            id="formLastName"
+                            placeholder="Achternaam *"
+                            value={formData.lastName}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="formCompany">Bedrijfsnaam</label>
+                        <input
+                            type="text"
+                            name="company"
+                            id="formCompany"
+                            placeholder="Bedrijfsnaam"
+                            value={formData.company}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="formPhoneNr">Telefoonnummer</label>
+                        <input
+                            type="tel"
+                            name="phone"
+                            id="formPhoneNr"
+                            placeholder="Telefoonnummer"
+                            value={formData.phone}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="formEmail">E-mailadres</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="formEmail"
+                            placeholder="E-mailadres *"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="formMessage">Bericht</label>
+                        <textarea
+                            name="message"
+                            id="formMessage"
+                            rows={7}
+                            placeholder="Bericht *"
+                            value={formData.message}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="checkbox"
+                                id="formPrivacyPolicy"
+                                required
+                            />
+                            <label htmlFor="formPrivacyPolicy">
+                                Ik ga akkoord met de{" "}
+                                <Link to="#terms-conditions">
+                                    algemene voorwaarden
+                                </Link>{" "}
+                                en{" "}
+                                <Link to="#privacy-policy">
+                                    privacy statement
+                                </Link>{" "}
+                                <span>*</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input
+                                type="checkbox"
+                                id="formTermsAndConditions"
+                                required
+                            />
+                            <label htmlFor="formTermsAndConditions">
+                                Ik ga akkoord met de verwerking van mijn
+                                gegevens <span>*</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" disabled={isSubmitting}>
+                        {isSubmitting ? "Versturen ..." : "Versturen"}
+                    </button>
+                </form>
+            </div>
+        </section>
+    );
+};
+
+export default Form;

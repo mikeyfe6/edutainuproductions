@@ -1,0 +1,101 @@
+@use "../../customs/" as *;
+
+.form {
+    background-color: $primary;
+
+    @include full-width;
+
+    > div {
+        display: flex;
+        justify-content: space-around;
+
+        @include container;
+
+        > div ul {
+            display: flex;
+            flex-direction: column;
+            gap: rem-calc(12);
+            margin-top: rem-calc(24);
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: rem-calc(20);
+            }
+        }
+
+        > form {
+            display: flex;
+            flex-direction: column;
+            max-width: rem-calc(700);
+            width: 100%;
+            gap: rem-calc(24);
+            position: relative;
+            z-index: 0;
+            padding: rem-calc(48);
+            background-color: $white;
+            outline: 2px solid $black;
+
+            > div {
+                display: flex;
+                flex-direction: column;
+                gap: rem-calc(12);
+
+                > label {
+                    display: none;
+                }
+
+                > input:not([type="checkbox"]),
+                > textarea {
+                    width: 100%;
+                    outline: 2px solid $black;
+                    color: $white;
+                    padding: rem-calc(14);
+                    resize: none;
+                    background-color: transparent;
+
+                    @include border-radius;
+                    @include smooth-trans;
+
+                    &::placeholder {
+                        opacity: 0.75;
+                    }
+
+                    &:focus {
+                        outline: 2px solid $secondary;
+                    }
+                }
+
+                > div {
+                    display: flex;
+                    align-items: center;
+                    gap: rem-calc(12);
+
+                    > input[type="checkbox"] {
+                        width: rem-calc(20);
+                        height: rem-calc(20);
+
+                        + label {
+                            display: inline-block;
+
+                            a {
+                                @include underline;
+                            }
+
+                            span {
+                                color: $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            button {
+                margin-top: rem-calc(24);
+                align-self: flex-end;
+
+                @include button;
+            }
+        }
+    }
+}
