@@ -121,6 +121,14 @@
             background-color: $black;
             color: $white;
             border-radius: 0 17.5px 17.5px 0;
+            position: relative;
+            z-index: 0;
+
+            button {
+                margin-top: rem-calc(24);
+
+                @include button(2);
+            }
         }
     }
 }

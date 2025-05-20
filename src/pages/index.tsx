@@ -123,6 +123,9 @@ const IndexPage: React.FC<PageProps> = () => {
                             ondersteunen van de nieuwe generatie makers en
                             professionals.
                         </small>
+                        <button>
+                            <span>Vraag een offerte aan</span>
+                        </button>
                     </div>
                 </div>
             </section>
