@@ -183,8 +183,6 @@ h6 {
 }
 
 p {
-    max-width: 80ch;
-
     @include fluid-typing(18, 20);
 
     &:not(:last-child) {

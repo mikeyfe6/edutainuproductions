@@ -4,6 +4,8 @@ import { Link } from "gatsby";
 
 import { StaticImage } from "gatsby-plugin-image";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import * as headerStyles from "../../styles/modules/layout/header.module.scss";
 
 const Header: React.FC = () => {
@@ -17,22 +19,53 @@ const Header: React.FC = () => {
                             alt="Edutain U Productions Logo"
                         />
                     </Link>
-                    <nav>
+                    <div>
                         <ul>
                             <li>
-                                <Link to="/">Untold & Eternity</Link>
+                                <a href="">
+                                    <FontAwesomeIcon
+                                        icon={["fab", "square-instagram"]}
+                                        size="xl"
+                                    />
+                                </a>
                             </li>
                             <li>
-                                <Link to="/">Reisverhalen</Link>
+                                <a href="">
+                                    <FontAwesomeIcon
+                                        icon={["fab", "linkedin-in"]}
+                                        size="xl"
+                                    />
+                                </a>
                             </li>
                             <li>
-                                <Link to="/">Bun Tranga</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Media</Link>
+                                <a href="">
+                                    <FontAwesomeIcon
+                                        icon={["fab", "facebook-f"]}
+                                        size="xl"
+                                    />
+                                </a>
                             </li>
                         </ul>
-                    </nav>
+
+                        <hr />
+
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#biografie">Biografie</a>
+                                </li>
+                                <li>
+                                    <a href="#expertise">Expertise</a>
+                                </li>
+                                <li>
+                                    <a href="#consultancy">Consultancy</a>
+                                </li>
+                                <li>
+                                    <a href="#bun-tranga">Bun Tranga</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
 
                 <div className={headerStyles.intro}>

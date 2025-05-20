@@ -11,7 +11,7 @@ import * as indexStyles from "../styles/modules/pages/index.module.scss";
 const IndexPage: React.FC<PageProps> = () => {
     return (
         <Layout>
-            <section className={indexStyles.biography}>
+            <section className={indexStyles.biography} id="biografie">
                 <div>
                     <h2>Biografie</h2>
 
@@ -56,7 +56,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 </div>
             </section>
 
-            <section className={indexStyles.expertise}>
+            <section className={indexStyles.expertise} id="expertise">
                 <div>
                     <h2>Expertiseprofiel</h2>
                     <p>
@@ -77,8 +77,8 @@ const IndexPage: React.FC<PageProps> = () => {
                 </div>
             </section>
 
-            <section className={indexStyles.services}>
-                <h2>Waarmee ik je kan helpen</h2>
+            <section className={indexStyles.services} id="consultancy">
+                <h2>Waarmee ik je kan helpen:</h2>
                 <ul>
                     <li>
                         <span>Fondsenwerving & subsidieaanvragen</span>
@@ -196,7 +196,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 </div>
             </section>
 
-            <section className={indexStyles.fraternity}>
+            <section className={indexStyles.fraternity} id="bun-tranga">
                 <div>
                     <h2>Studentenvereniging Bun Tranga</h2>
                     <p>

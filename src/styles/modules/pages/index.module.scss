@@ -56,8 +56,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 2px solid $secondary;
-            padding: rem-calc(18 20);
+            border: 3px solid $secondary;
+            padding: rem-calc(20);
             max-width: rem-calc(325);
             text-align: center;
             font-weight: 500;
@@ -73,32 +73,32 @@
             &:nth-child(1) {
                 grid-row: 1;
                 grid-column: 1;
-                border-radius: 17.5px 17.5px 0;
+                border-radius: 0 40px;
             }
 
             &:nth-child(2) {
                 grid-row: 1;
                 grid-column: 2;
-                border-radius: 17.5px 17.5px 17.5px 0;
+                border-radius: 40px 0;
             }
 
             &:nth-child(3) {
                 grid-row: 2;
                 grid-column: 1 / span 2;
                 justify-self: center;
-                border-radius: 17.5px;
+                border-radius: 20px;
             }
 
             &:nth-child(4) {
                 grid-row: 3;
                 grid-column: 1;
-                border-radius: 17.5px 0 17.5px 17.5px;
+                border-radius: 40px 0;
             }
 
             &:nth-child(5) {
                 grid-row: 3;
                 grid-column: 2;
-                border-radius: 0 17.5px 17.5px;
+                border-radius: 0 40px;
             }
         }
     }
@@ -168,8 +168,6 @@
 
 .fraternity {
     > div {
-        background-color: $black;
-        color: $white;
         padding: rem-calc(24 32);
         border: 2px solid $black;
     }
