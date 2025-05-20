@@ -31,10 +31,10 @@
             width: 100%;
             gap: rem-calc(24);
             position: relative;
-            z-index: 0;
             padding: rem-calc(48);
             background-color: $white;
             outline: 2px solid $black;
+            z-index: 0;
 
             > div {
                 display: flex;
@@ -69,22 +69,60 @@
                 > div {
                     display: flex;
                     align-items: center;
-                    gap: rem-calc(12);
 
                     > input[type="checkbox"] {
-                        width: rem-calc(20);
-                        height: rem-calc(20);
+                        width: rem-calc(25);
+                        height: rem-calc(25);
+                        opacity: 0;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        margin: 0;
+                        z-index: 1;
 
                         + label {
-                            display: inline-block;
+                            position: relative;
+                            padding-left: rem-calc(36);
+                            min-height: rem-calc(25);
+
+                            span {
+                                color: $secondary;
+                            }
 
                             a {
                                 @include underline;
                             }
 
-                            span {
-                                color: $secondary;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                width: rem-calc(25);
+                                height: rem-calc(25);
+                                border: 2px solid $black;
+                                background: $white;
+                                border-radius: 4px;
+                                transition: border-color 0.2s, background 0.2s;
                             }
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                left: rem-calc(5);
+                                top: 50%;
+                                transform: translateY(-50%) scale(0);
+                                width: rem-calc(15);
+                                height: rem-calc(15);
+                                background: $secondary;
+                                border-radius: 2px;
+                                transition: transform 0.2s;
+                            }
+                        }
+
+                        &:checked + label::after {
+                            transform: translateY(-50%) scale(1);
                         }
                     }
                 }

@@ -24,6 +24,14 @@ const Header: React.FC = () => {
                             <li>
                                 <a href="">
                                     <FontAwesomeIcon
+                                        icon={["fab", "facebook-f"]}
+                                        size="xl"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <FontAwesomeIcon
                                         icon={["fab", "square-instagram"]}
                                         size="xl"
                                     />
@@ -33,14 +41,6 @@ const Header: React.FC = () => {
                                 <a href="">
                                     <FontAwesomeIcon
                                         icon={["fab", "linkedin-in"]}
-                                        size="xl"
-                                    />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <FontAwesomeIcon
-                                        icon={["fab", "facebook-f"]}
                                         size="xl"
                                     />
                                 </a>
@@ -108,12 +108,12 @@ const Header: React.FC = () => {
                 </div>
 
                 <div className={headerStyles.buttons}>
-                    <Link to="/" className={headerStyles.button}>
+                    <a href="#biografie" className={headerStyles.button}>
                         Meer weten
-                    </Link>
-                    <Link to="/" className={headerStyles.button}>
+                    </a>
+                    <a href="#contact" className={headerStyles.button}>
                         Contact
-                    </Link>
+                    </a>
                 </div>
             </div>
 

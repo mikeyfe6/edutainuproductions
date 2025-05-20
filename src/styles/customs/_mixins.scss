@@ -83,29 +83,25 @@
     touch-action: manipulation;
     color: $white;
     font-weight: 500;
+    border: 2px solid if($type == 1, $black, $white);
+
+    @include fluid-typing(18, 20);
 
     &::after {
         content: "";
         background-color: $secondary;
         width: 100%;
-        z-index: -1;
-        position: absolute;
         height: 100%;
+        position: absolute;
         top: rem-calc(10);
         left: rem-calc(10);
-        transition: 0.2s;
+        z-index: -1;
+        transition: top 0.2s, left 0.2s;
+        pointer-events: none;
     }
 
     &:hover::after {
         top: 0;
         left: 0;
     }
-
-    @if $type == 1 {
-        border: 2px solid $black;
-    } @else if $type == 2 {
-        border: 2px solid $white;
-    }
-
-    @include fluid-typing(18, 20);
 }

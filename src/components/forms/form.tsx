@@ -66,7 +66,7 @@ const Form: React.FC = () => {
     };
 
     return (
-        <section className={formStyles.form}>
+        <section className={formStyles.form} id="contact">
             <div>
                 <div>
                     <h2>Kennismaken?</h2>
@@ -79,18 +79,20 @@ const Form: React.FC = () => {
                             <a href="">
                                 <FontAwesomeIcon
                                     icon={["fas", "paper-plane"]}
-                                    size="xl"
+                                    size="lg"
                                 />
                             </a>
-                            <p> otmar.watson@gmail.com</p>
+                            <span>·</span>
+                            <p>otmar.watson@gmail.com</p>
                         </li>
                         <li>
                             <a href="">
                                 <FontAwesomeIcon
                                     icon={["fas", "phone"]}
-                                    size="xl"
+                                    size="lg"
                                 />
                             </a>
+                            <span>·</span>
                             <p>0612345678</p>
                         </li>
                         <li>
@@ -100,6 +102,7 @@ const Form: React.FC = () => {
                                     size="xl"
                                 />
                             </a>
+                            <span>·</span>
                             <p>0612345678</p>
                         </li>
                     </ul>
