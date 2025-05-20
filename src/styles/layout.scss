@@ -26,7 +26,8 @@ body {
 main {
     flex: 1;
 
-    @include container($pT: 0, $pB: 0);
+    // TODO: dit hieronder moet weg uiteindelijk, container styling kan op section base
+    @include container;
 }
 
 footer {

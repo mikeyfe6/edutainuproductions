@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faPaperPlane, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 import {
     faSquareInstagram,
@@ -15,8 +15,7 @@ library.add(
     faFacebookF,
     faLinkedinIn,
     faWhatsapp,
-    faPaperPlane,
-    faPhone
+    faPaperPlane
 );
 
 import Header from "./layout/header";

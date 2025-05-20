@@ -4,10 +4,17 @@
     $header: &;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap: rem-calc(80);
 
-    @include container($pT: 0, $pB: rem-calc(64));
+    @include container($pB: rem-calc(64));
+
+    @include phablet {
+        flex-direction: row;
+        align-items: start;
+    }
 
     > .hero {
         width: 100%;
@@ -52,7 +59,7 @@
                 > hr {
                     width: 100%;
                     height: 2px;
-                    background-color: $primary;
+                    background-color: $secondary;
                     margin: rem-calc(8 0);
                 }
 
@@ -71,6 +78,7 @@
 
                         > li {
                             padding: rem-calc(4);
+                            text-align: right;
 
                             a {
                                 font-weight: 500;
@@ -122,11 +130,17 @@
         max-width: rem-calc(500);
 
         img {
-            border-radius: 0 0 50px 50px;
+            border-radius: 50px;
+            border-top: 7.5px solid $primary;
             border-left: 7.5px solid $primary;
             border-right: 7.5px solid $secondary;
             border-bottom: 7.5px solid $black;
             overflow: hidden;
+
+            @include phablet {
+                border-top: none;
+                border-radius: 0 0 50px 50px;
+            }
         }
     }
 }

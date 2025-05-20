@@ -120,7 +120,7 @@ const IndexPage: React.FC<PageProps> = () => {
                         </ul>
                         <small>
                             Let op: Mijn diensten zijn gratis voor jongeren en
-                            jongvolwassenen tot 27 jaar. Ik geloof in het
+                            jongeren tot en met 23 jaar. Ik geloof in het
                             ondersteunen van de nieuwe generatie makers en
                             professionals.
                         </small>

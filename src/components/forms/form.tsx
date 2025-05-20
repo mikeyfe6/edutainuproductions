@@ -85,26 +85,6 @@ const Form: React.FC = () => {
                             <span>·</span>
                             <p>otmar.watson@gmail.com</p>
                         </li>
-                        <li>
-                            <a href="">
-                                <FontAwesomeIcon
-                                    icon={["fas", "phone"]}
-                                    size="lg"
-                                />
-                            </a>
-                            <span>·</span>
-                            <p>0612345678</p>
-                        </li>
-                        <li>
-                            <a href="">
-                                <FontAwesomeIcon
-                                    icon={["fab", "whatsapp"]}
-                                    size="xl"
-                                />
-                            </a>
-                            <span>·</span>
-                            <p>0612345678</p>
-                        </li>
                     </ul>
                 </div>
 

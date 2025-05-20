@@ -7,7 +7,7 @@
     @include full-width;
 
     > div {
-        @include container($pT: 0, $pB: 0);
+        @include container;
 
         > div {
             column-count: 2;
@@ -28,7 +28,7 @@
     @include full-width;
 
     > div {
-        @include container($pT: 0, $pB: 0);
+        @include container;
     }
 }
 
@@ -140,7 +140,7 @@
     @include full-width;
 
     > div {
-        @include container($pT: 0, $pB: 0);
+        @include container;
 
         h2 {
             margin-bottom: rem-calc(32);

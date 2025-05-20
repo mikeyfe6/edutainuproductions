@@ -6,9 +6,9 @@
 
 @mixin container(
     $maxWidth: rem-calc($layout),
-    $pT: rem-calc(32),
+    $pT: 0,
     $pR: rem-calc(20),
-    $pB: rem-calc(32),
+    $pB: 0,
     $pL: rem-calc(20)
 ) {
     max-width: $maxWidth;
