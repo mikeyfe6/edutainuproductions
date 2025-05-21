@@ -54,6 +54,7 @@ const IndexPage: React.FC<PageProps> = () => {
                             maatschappelijke sector.
                         </p>
                     </div>
+                    {/* TODO: add button to otje's blog */}
                 </div>
             </section>
 

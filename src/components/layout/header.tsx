@@ -45,6 +45,14 @@ const Header: React.FC = () => {
                                     />
                                 </a>
                             </li>
+                            <li>
+                                <a href="">
+                                    <FontAwesomeIcon
+                                        icon={["fab", "youtube"]}
+                                        size="xl"
+                                    />
+                                </a>
+                            </li>
                         </ul>
 
                         <hr />

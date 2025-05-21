@@ -8,6 +8,7 @@ import {
     faFacebookF,
     faLinkedinIn,
     faWhatsapp,
+    faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
 library.add(
@@ -15,7 +16,8 @@ library.add(
     faFacebookF,
     faLinkedinIn,
     faWhatsapp,
-    faPaperPlane
+    faPaperPlane,
+    faYoutube
 );
 
 import Header from "./layout/header";
