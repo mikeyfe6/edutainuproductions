@@ -35,7 +35,11 @@ footer {
 }
 
 section {
-    padding: rem-calc(96 0);
+    padding: rem-calc(48 0);
+
+    @include phablet {
+        padding: rem-calc(96 0);
+    }
 
     &#consultancy {
         padding-bottom: rem-calc(24);

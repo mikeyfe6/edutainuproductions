@@ -13,7 +13,7 @@
 ) {
     max-width: $maxWidth;
     margin: 0 auto;
-    padding: $pT rem-calc(20) $pB;
+    padding: $pT rem-calc(16) $pB;
     width: 100%;
 
     @include mobile {

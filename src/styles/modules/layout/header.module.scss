@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: rem-calc(72);
+    gap: rem-calc(64);
 
     @include container($pB: rem-calc(64));
 
