@@ -36,6 +36,10 @@ footer {
 
 section {
     padding: rem-calc(96 0);
+
+    &#consultancy {
+        padding-bottom: rem-calc(24);
+    }
 }
 
 .responsive-tag {

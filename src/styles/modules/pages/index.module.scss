@@ -154,11 +154,14 @@
 
             li {
                 background-color: $white;
-                padding: rem-calc(20 32);
                 outline: 3px solid $white;
                 flex: 20%;
                 width: 100%;
-                cursor: default;
+
+                a {
+                    display: block;
+                    padding: rem-calc(20 32);
+                }
 
                 @include smooth-trans;
                 @include fluid-typing(18, 20);

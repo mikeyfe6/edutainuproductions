@@ -136,65 +136,102 @@ const IndexPage: React.FC<PageProps> = () => {
                     <h2>Trackrecord</h2>
                     <ul>
                         <li>
-                            <b>Directeur en artistiek leider</b> Stichting
-                            Untold
+                            <a href="#!">
+                                <b>Directeur en artistiek leider</b> Stichting
+                                Untold
+                            </a>
                         </li>
                         <li>
-                            <b>Zakelijk leider</b> Stichting Eternity Percussion
+                            <a href="#!">
+                                <b>Zakelijk leider</b> Stichting Eternity
+                                Percussion
+                            </a>
                         </li>
                         <li>
-                            <b>Programmeur & projectleider</b> Black Achievement
-                            Month
+                            <a href="#!">
+                                <b>Programmeur & projectleider</b> Black
+                                Achievement Month
+                            </a>
                         </li>
                         <li>
-                            <b>Projectleider & programmeur</b> Swazoom
+                            <a href="#!">
+                                <b>Projectleider & programmeur</b> Swazoom
+                            </a>
                         </li>
                         <li>
-                            <b>Coördinator Kwaliteit en Ontwikkeling</b> Vivell
+                            <a href="#!">
+                                <b>Coördinator Kwaliteit en Ontwikkeling</b>{" "}
+                                Vivell
+                            </a>
                         </li>
                         <li>
-                            <b>
-                                Lid Stuurgroep Regisseur Kunst & Cultuur
-                                Zuidoost
-                            </b>{" "}
-                            Gemeente Amsterdam
+                            <a href="#!">
+                                <b>
+                                    Lid Stuurgroep Regisseur Kunst & Cultuur
+                                    Zuidoost
+                                </b>{" "}
+                                Gemeente Amsterdam
+                            </a>
                         </li>
                         <li>
-                            <b>Commissielid Adviescommissie Cultuur</b> Gemeente
-                            Rotterdam
+                            <a href="#!">
+                                <b>Commissielid Adviescommissie Cultuur</b>{" "}
+                                Gemeente Rotterdam
+                            </a>
                         </li>
                         <li>
-                            <b>Redactielid</b> Cultuurkrant NL
+                            <a href="#!">
+                                <b>Redactielid</b> Cultuurkrant NL
+                            </a>
                         </li>
                         <li>
-                            <b>Bestuurslid</b> Broos Instituut
+                            <a href="#!">
+                                <b>Bestuurslid</b> Broos Instituut
+                            </a>
                         </li>
                         <li>
-                            <b>Bestuurslid</b> Theater voor Keti Koti
+                            <a href="#!">
+                                <b>Bestuurslid</b> Theater voor Keti Koti
+                            </a>
                         </li>
                         <li>
-                            <b>Bestuurslid</b> Tolhuistuin
+                            <a href="#!">
+                                <b>Bestuurslid</b> Tolhuistuin
+                            </a>
                         </li>
                         <li>
-                            <b>Projectleider In The Picture Festival</b> Bijlmer
-                            Parktheater
+                            <a href="#!">
+                                <b>Projectleider In The Picture Festival</b>{" "}
+                                Bijlmer Parktheater
+                            </a>
                         </li>
                         <li>
-                            <b>Projectleider</b> Dag van 1000 Culturen
+                            <a href="#!">
+                                <b>Projectleider</b> Dag van 1000 Culturen
+                            </a>
                         </li>
                         <li>
-                            <b>Coördinator Educatie en Informatie</b> Stichting
-                            Brotherhood
+                            <a href="#!">
+                                <b>Coördinator Educatie en Informatie</b>{" "}
+                                Stichting Brotherhood
+                            </a>
                         </li>
                         <li>
-                            <b>Mede-oprichter </b> Stichting Eternity Percussion
+                            <a href="#!">
+                                <b>Mede-oprichter </b> Stichting Eternity
+                                Percussion
+                            </a>
                         </li>
                         <li>
-                            <b>Oprichter</b> Stichting Untold
+                            <a href="#!">
+                                <b>Oprichter</b> Stichting Untold
+                            </a>
                         </li>
                         <li>
-                            <b>Kernlid en mede-oprichter</b> Studentenvereniging
-                            Bun Tranga
+                            <a href="#!">
+                                <b>Kernlid en mede-oprichter</b>{" "}
+                                Studentenvereniging Bun Tranga
+                            </a>
                         </li>
                     </ul>
                 </div>

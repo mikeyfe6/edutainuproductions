@@ -39,7 +39,7 @@
             > div {
                 display: flex;
                 flex-direction: column;
-                gap: rem-calc(12);
+                gap: rem-calc(22);
 
                 > label {
                     display: none;
@@ -48,22 +48,32 @@
                 > input:not([type="checkbox"]),
                 > textarea {
                     width: 100%;
-                    outline: 2px solid $black;
-                    color: $white;
-                    padding: rem-calc(14);
+                    border-bottom: 2px solid $black;
+                    color: $black;
+                    padding: rem-calc(14 0);
                     resize: none;
                     background-color: transparent;
 
-                    @include border-radius;
                     @include smooth-trans;
+                    @include fluid-typing(16, 18);
 
                     &::placeholder {
                         opacity: 0.75;
                     }
 
                     &:focus {
-                        outline: 2px solid $secondary;
+                        border-color: $secondary;
                     }
+                }
+
+                > input:not(:placeholder-shown),
+                > textarea:not(:placeholder-shown) {
+                    border-bottom: 4px solid $black;
+                    padding-bottom: rem-calc(12);
+                }
+
+                > textarea {
+                    margin-bottom: rem-calc(20);
                 }
 
                 > div {
@@ -105,19 +115,21 @@
                                 background: $white;
                                 border-radius: 4px;
                                 transition: border-color 0.2s, background 0.2s;
+                                cursor: pointer;
                             }
 
                             &::after {
                                 content: "";
                                 position: absolute;
-                                left: rem-calc(5);
+                                left: rem-calc(4.5);
                                 top: 50%;
                                 transform: translateY(-50%) scale(0);
-                                width: rem-calc(15);
-                                height: rem-calc(15);
+                                width: rem-calc(16);
+                                height: rem-calc(16);
                                 background: $secondary;
                                 border-radius: 2px;
                                 transition: transform 0.2s;
+                                cursor: pointer;
                             }
                         }
 
