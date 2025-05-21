@@ -177,8 +177,8 @@
                 border-radius: 0 17.5px 17.5px 0;
             }
 
-            button {
-                margin-top: rem-calc(24);
+            a {
+                margin-top: rem-calc(36);
                 margin-bottom: rem-calc(12);
 
                 @include button(2);

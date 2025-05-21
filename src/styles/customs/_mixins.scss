@@ -76,6 +76,8 @@
 }
 
 @mixin button($type: 1) {
+    display: block;
+    width: fit-content;
     padding: rem-calc(17 24 17);
     position: relative;
     background-color: transparent;
