@@ -146,10 +146,6 @@
 
 h1 {
     @include fluid-typing(36, 40);
-
-    header & {
-        @include fluid-typing(40, 44);
-    }
 }
 
 h2 {

@@ -11,7 +11,7 @@
 
     @include container($pB: rem-calc(64));
 
-    @include phablet {
+    @include mobile {
         flex-direction: row;
         align-items: start;
     }
@@ -21,16 +21,25 @@
 
         > .menu {
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             padding: rem-calc(16 0);
             align-items: center;
             height: fit-content;
 
-            > a {
-                max-width: rem-calc(150);
+            @include mobile {
+                flex-direction: row;
+            }
 
-                @include phablet {
-                    max-width: rem-calc(200);
+            > a {
+                display: none;
+                align-self: unset;
+                width: 100%;
+                min-width: rem-calc(150);
+                max-width: rem-calc(200);
+
+                @include mobile {
+                    display: block;
                 }
             }
 
@@ -38,12 +47,23 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
-                gap: rem-calc(16);
+
+                @include mobile {
+                    gap: rem-calc(16);
+                }
 
                 > ul {
                     display: flex;
+                    align-items: flex-end;
                     gap: rem-calc(20);
-                    margin-bottom: 0;
+                    margin: rem-calc(0 12 8 12);
+                    width: 100%;
+
+                    @include mobile {
+                        width: fit-content;
+                        align-items: unset;
+                        margin: 0;
+                    }
 
                     > li {
                         a {
@@ -53,6 +73,16 @@
                                 color: $secondary;
                             }
                         }
+
+                        &.logo {
+                            margin-right: auto;
+                            width: rem-calc(125);
+                            display: block;
+
+                            @include mobile {
+                                display: none;
+                            }
+                        }
                     }
                 }
 
@@ -60,20 +90,42 @@
                     width: 100%;
                     height: 2px;
                     background-color: $black;
-                    margin: rem-calc(12 0 4);
+                    margin: rem-calc(12 0 0);
+
+                    @include compact {
+                        margin: rem-calc(12 0 4);
+                    }
                 }
 
                 > nav {
                     height: fit-content;
+                    background-color: $primary;
+
+                    @include compact {
+                        background-color: transparent;
+                    }
 
                     > ul {
                         display: flex;
-                        flex-direction: column;
+                        overflow-x: auto;
+                        scrollbar-width: thin;
+                        max-width: 100vw;
                         gap: rem-calc(8);
+                        padding: rem-calc(16 0);
+
+                        @include compact {
+                            padding: rem-calc(0 0 16 0);
+                        }
+
+                        @include mobile {
+                            max-width: 90vw;
+                            flex-direction: row;
+                            padding: 0;
+                            gap: rem-calc(10);
+                        }
 
                         @include phablet {
-                            flex-direction: row;
-                            gap: rem-calc(10);
+                            max-width: fit-content;
                         }
 
                         > li {
@@ -82,17 +134,20 @@
 
                             a {
                                 font-weight: 600;
+                                white-space: nowrap;
                                 box-shadow: inset 0 0 0 0 $secondary;
                                 margin: 7.5px -0.25rem;
                                 padding: 7.5px 0.75rem;
                                 transition: color 0.4s ease-in-out,
                                     box-shadow 0.35s ease-in-out;
 
-                                @include fluid-typing(16, 20);
+                                @include fluid-typing(16, 19);
 
                                 &:hover {
-                                    box-shadow: inset 175px 0 0 0 $secondary;
-                                    color: $white;
+                                    @include compact {
+                                        box-shadow: inset 175px 0 0 0 $secondary;
+                                        color: $white;
+                                    }
                                 }
                             }
                         }
@@ -136,7 +191,7 @@
             border-bottom: 7.5px solid $black;
             overflow: hidden;
 
-            @include phablet {
+            @include mobile {
                 border-top: none;
                 border-radius: 0 0 50px 50px;
             }

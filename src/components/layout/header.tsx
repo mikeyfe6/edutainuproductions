@@ -21,21 +21,13 @@ const Header: React.FC = () => {
                     </Link>
                     <div>
                         <ul>
-                            <li>
-                                <a href="">
-                                    <FontAwesomeIcon
-                                        icon={["fab", "facebook-f"]}
-                                        size="xl"
+                            <li className={headerStyles.logo}>
+                                <Link to="/">
+                                    <StaticImage
+                                        src="../../images/logo/eup-logo-trans.png"
+                                        alt="Edutain U Productions Logo"
                                     />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <FontAwesomeIcon
-                                        icon={["fab", "square-instagram"]}
-                                        size="xl"
-                                    />
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a href="">
@@ -103,14 +95,12 @@ const Header: React.FC = () => {
                         coach of conceptontwikkelaar. Otmar Watson voert
                         opdrachten uit voor o.a. de Gemeente Amsterdam, Gemeente
                         Rotterdam, culturele instellingen, scholen en grassroots
-                        organisaties aan betekenisvolle projecten die
-                        geschiedenis zichtbaar maken en nieuw talent een podium
-                        geven.
+                        organisaties.
                     </p>
 
                     <p>
                         Met Edutain U Productions kies je voor een partner die
-                        visie koppelt aan daadkracht, en creativiteit aan
+                        visie koppelt aan daadkracht en creativiteit aan
                         verantwoordelijkheid.
                     </p>
                 </div>

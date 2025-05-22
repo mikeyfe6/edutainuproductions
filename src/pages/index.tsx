@@ -2,6 +2,8 @@ import * as React from "react";
 
 import type { HeadFC, PageProps } from "gatsby";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { Seo } from "../components/seo";
 
 import Layout from "../components/layout";
@@ -83,12 +85,47 @@ const IndexPage: React.FC<PageProps> = () => {
                 <h2>Waarmee ik je kan helpen:</h2>
                 <ul>
                     <li>
+                        <div>
+                            <FontAwesomeIcon
+                                icon={["far", "handshake"]}
+                                size="2xl"
+                            />
+                        </div>
                         <span>Fondsenwerving & subsidieaanvragen</span>
                     </li>
-                    <li>Projectontwikkeling & projectuitvoering</li>
-                    <li>Strategisch advies bij culturele plannen</li>
-                    <li>Feedback op projectplannen of begrotingen</li>
-                    <li>Positionering en presentatie van je idee</li>
+                    <li>
+                        <div>
+                            <FontAwesomeIcon
+                                icon={["far", "file-lines"]}
+                                size="2xl"
+                            />
+                        </div>
+                        <span>Projectontwikkeling & projectuitvoering</span>
+                    </li>
+                    <li>
+                        <div>
+                            <FontAwesomeIcon icon={["far", "gem"]} size="2xl" />
+                        </div>
+                        <span>Strategisch advies bij culturele plannen</span>
+                    </li>
+                    <li>
+                        <div>
+                            <FontAwesomeIcon
+                                icon={["far", "comments"]}
+                                size="2xl"
+                            />
+                        </div>
+                        <span>Feedback op projectplannen of begrotingen</span>
+                    </li>
+                    <li>
+                        <div>
+                            <FontAwesomeIcon
+                                icon={["far", "lightbulb"]}
+                                size="2xl"
+                            />
+                        </div>
+                        <span>Positionering en presentatie van je idee</span>
+                    </li>
                 </ul>
             </section>
 
@@ -103,7 +140,7 @@ const IndexPage: React.FC<PageProps> = () => {
                             met je meedenkt over de aanvraag of strategie?
                         </p>
                         <p>
-                            Met meer dan 15 jaar ervaring in de kunst- en
+                            Met meer dan 23 jaar ervaring in de kunst- en
                             cultuursector bied ik professioneel advies aan
                             makers, stichtingen en culturele organisaties.
                             Tijdens een adviesgesprek krijg je concrete tips,
@@ -115,15 +152,14 @@ const IndexPage: React.FC<PageProps> = () => {
                     <div className={indexStyles.pricing}>
                         <h2>Tarieven:</h2>
                         <ul>
-                            <li>• 30 minuten: €75</li>
-                            <li>• 60 minuten: €135</li>
-                            <li>• (*Alle bedragen zijn excl. btw*)</li>
+                            <li>30 minuten: €75</li>
+                            <li>60 minuten: €135</li>
+                            <li>* (Alle bedragen zijn excl. btw)</li>
                         </ul>
                         <small>
-                            Let op: Mijn diensten zijn gratis voor jongeren en
-                            jongeren tot en met 23 jaar. Ik geloof in het
-                            ondersteunen van de nieuwe generatie makers en
-                            professionals.
+                            Let op: Mijn diensten zijn gratis voor jongeren tot
+                            en met 23 jaar. Ik geloof in het ondersteunen van de
+                            nieuwe generatie makers en professionals.
                         </small>
                         <a href="#contact">
                             <span>Vraag een offerte aan</span>

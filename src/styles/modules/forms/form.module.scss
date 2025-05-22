@@ -11,11 +11,11 @@
         justify-content: space-between;
         gap: rem-calc(56);
 
+        @include container;
+
         @include phablet {
             flex-direction: row;
         }
-
-        @include container;
 
         > div ul {
             display: flex;

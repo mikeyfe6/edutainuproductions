@@ -2,22 +2,29 @@ import * as React from "react";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-
 import {
-    faSquareInstagram,
-    faFacebookF,
+    faGem,
+    faFileLines,
+    faComments,
+    faLightbulb,
+    faHandshake,
+} from "@fortawesome/free-regular-svg-icons";
+import {
     faLinkedinIn,
     faWhatsapp,
     faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
 library.add(
-    faSquareInstagram,
-    faFacebookF,
     faLinkedinIn,
     faWhatsapp,
     faPaperPlane,
-    faYoutube
+    faYoutube,
+    faGem,
+    faFileLines,
+    faComments,
+    faLightbulb,
+    faHandshake
 );
 
 import Header from "./layout/header";
