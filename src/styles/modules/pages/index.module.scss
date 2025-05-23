@@ -67,7 +67,7 @@
 
         @include fluid-typing(24, 32);
 
-        @include phablet {
+        @include mobile {
             padding: rem-calc(24 32);
             width: fit-content;
         }
