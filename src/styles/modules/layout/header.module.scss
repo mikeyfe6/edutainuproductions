@@ -83,8 +83,12 @@
 
                         &.logo {
                             margin-right: auto;
-                            width: rem-calc(125);
+                            width: rem-calc(75);
                             display: block;
+
+                            @include mobile {
+                                width: rem-calc(100);
+                            }
 
                             @include phablet {
                                 display: none;
