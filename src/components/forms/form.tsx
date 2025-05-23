@@ -76,20 +76,25 @@ const Form: React.FC = () => {
 
                     <ul>
                         <li>
-                            <a href="">
+                            <a
+                                href="mailto:otmar.watson@gmail.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <FontAwesomeIcon
                                     icon={["fas", "paper-plane"]}
                                     size="lg"
                                 />
+
+                                <span>·</span>
+                                <p>otmar.watson@gmail.com</p>
                             </a>
-                            <span>·</span>
-                            <p>otmar.watson@gmail.com</p>
                         </li>
                     </ul>
                 </div>
 
                 <form
-                    name="kir-form"
+                    name="eup-form"
                     method="post"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
@@ -98,7 +103,7 @@ const Form: React.FC = () => {
                     }
                 >
                     <input type="hidden" name="bot-field" />
-                    <input type="hidden" name="form-name" value="kir-form" />
+                    <input type="hidden" name="form-name" value="eup-form" />
 
                     <div>
                         <label htmlFor="formFirstName">Voornaam</label>

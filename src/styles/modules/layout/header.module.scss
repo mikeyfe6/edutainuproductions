@@ -11,7 +11,7 @@
 
     @include container($pB: rem-calc(64));
 
-    @include mobile {
+    @include laptop {
         flex-direction: row;
         align-items: start;
     }
@@ -26,8 +26,9 @@
             padding: rem-calc(16 0);
             align-items: center;
             height: fit-content;
+            gap: rem-calc(24);
 
-            @include mobile {
+            @include phablet {
                 flex-direction: row;
             }
 
@@ -37,8 +38,9 @@
                 width: 100%;
                 min-width: rem-calc(150);
                 max-width: rem-calc(200);
+                white-space: nowrap;
 
-                @include mobile {
+                @include phablet {
                     display: block;
                 }
             }
@@ -48,8 +50,12 @@
                 flex-direction: column;
                 align-items: flex-end;
 
+                @include compact {
+                    width: 100%;
+                }
+
                 @include mobile {
-                    gap: rem-calc(16);
+                    width: fit-content;
                 }
 
                 > ul {
@@ -59,7 +65,7 @@
                     margin: rem-calc(0 12 8 12);
                     width: 100%;
 
-                    @include mobile {
+                    @include phablet {
                         width: fit-content;
                         align-items: unset;
                         margin: 0;
@@ -79,7 +85,7 @@
                             width: rem-calc(125);
                             display: block;
 
-                            @include mobile {
+                            @include phablet {
                                 display: none;
                             }
                         }
@@ -114,13 +120,13 @@
                         padding: rem-calc(16 0);
 
                         @include compact {
-                            padding: rem-calc(0 0 16 0);
+                            padding: rem-calc(8 0 16 0);
                         }
 
                         @include mobile {
                             max-width: 90vw;
                             flex-direction: row;
-                            padding: 0;
+                            padding: rem-calc(8 0 16 0);
                             gap: rem-calc(10);
                         }
 
@@ -160,8 +166,12 @@
             h1 {
                 border-left: 5px solid $primary;
                 padding-left: rem-calc(16);
-                margin-top: rem-calc(48);
+                margin-top: rem-calc(32);
                 margin-bottom: rem-calc(24);
+
+                @include mobile {
+                    margin-top: rem-calc(48);
+                }
             }
 
             p {
@@ -182,6 +192,7 @@
 
     > .image {
         max-width: rem-calc(500);
+        min-width: rem-calc(300);
 
         img {
             border-radius: 50px;
@@ -191,7 +202,7 @@
             border-bottom: 7.5px solid $black;
             overflow: hidden;
 
-            @include mobile {
+            @include laptop {
                 border-top: none;
                 border-radius: 0 0 50px 50px;
             }

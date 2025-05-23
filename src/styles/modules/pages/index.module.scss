@@ -11,11 +11,16 @@
 
         > div {
             column-count: 1;
-            column-gap: rem-calc(160);
+            column-gap: rem-calc(80);
             column-rule: 2px solid $primary;
 
-            @include phablet {
+            @include tablet {
                 column-count: 2;
+                column-gap: rem-calc(120);
+            }
+
+            @include desktop {
+                column-gap: rem-calc(160);
             }
 
             p {
@@ -41,31 +46,43 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    gap: rem-calc(120);
+    gap: rem-calc(20);
 
-    @include phablet {
+    @include mobile {
+        gap: rem-calc(48);
+    }
+
+    @include laptop {
         flex-direction: row;
+        gap: rem-calc(120);
     }
 
     h2 {
         background-color: $black;
         color: $white;
-        padding: rem-calc(24 32);
+        padding: rem-calc(20 28);
         margin-bottom: 0;
+        width: 100%;
 
-        @include fluid-typing(28, 32);
+        @include fluid-typing(24, 32);
+
+        @include phablet {
+            padding: rem-calc(24 32);
+            width: fit-content;
+        }
     }
 
     ul {
         display: grid;
         grid-template-columns: auto;
-        gap: rem-calc(28);
+        gap: rem-calc(16);
         list-style: none;
         width: 100%;
         place-items: center;
 
         @include phablet {
             width: fit-content;
+            gap: rem-calc(28);
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
         }
@@ -77,7 +94,7 @@
             justify-content: space-between;
             border: 3px solid $white;
             outline: 2px solid $secondary;
-            padding: rem-calc(24 20);
+            padding: rem-calc(16 32 16 16);
             width: 100%;
             max-width: rem-calc(525);
             text-align: center;
@@ -233,6 +250,10 @@
                 @include fluid-typing(18, 20);
 
                 @include phablet {
+                    flex: 30%;
+                }
+
+                @include tablet {
                     flex: 20%;
                 }
 
@@ -242,7 +263,7 @@
                     height: 100%;
                     width: 100%;
 
-                    @include phablet {
+                    @include tablet {
                         padding: rem-calc(20 32);
                     }
                 }

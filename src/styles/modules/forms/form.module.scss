@@ -13,7 +13,7 @@
 
         @include container;
 
-        @include phablet {
+        @include tablet {
             flex-direction: row;
         }
 
@@ -24,9 +24,15 @@
             margin-top: rem-calc(24);
 
             li {
-                display: flex;
-                align-items: center;
-                gap: rem-calc(20);
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: rem-calc(20);
+
+                    p {
+                        @include link;
+                    }
+                }
             }
         }
 
@@ -59,6 +65,7 @@
                 > textarea {
                     width: 100%;
                     border-bottom: 2px solid $black;
+                    border-radius: 0 !important;
                     color: $black;
                     padding: rem-calc(14 0);
                     resize: none;
@@ -110,7 +117,7 @@
                             }
 
                             a {
-                                @include underline;
+                                @include link;
                             }
 
                             &::before {

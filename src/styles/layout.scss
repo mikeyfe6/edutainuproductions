@@ -38,6 +38,10 @@ section {
     padding: rem-calc(48 0);
 
     @include phablet {
+        padding: rem-calc(60 0);
+    }
+
+    @include tablet {
         padding: rem-calc(96 0);
     }
 
