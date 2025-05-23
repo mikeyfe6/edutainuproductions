@@ -54,7 +54,7 @@
                     width: 100%;
                 }
 
-                @include mobile {
+                @include phablet {
                     width: fit-content;
                 }
 
@@ -102,6 +102,10 @@
                     @include compact {
                         margin: rem-calc(12 0 4);
                     }
+
+                    @include mobile {
+                        margin: rem-calc(20 0 16);
+                    }
                 }
 
                 > nav {
@@ -133,6 +137,7 @@
 
                         @include phablet {
                             max-width: fit-content;
+                            padding: 0;
                         }
 
                         > li {
