@@ -15,6 +15,7 @@ interface SiteMetadata {
     youtubeUrl: string;
     spotifyUrl: string;
     linkedinUrl: string;
+    blogUrl: string;
 
     telephone: string;
     phoneRaw: string;
@@ -54,6 +55,7 @@ export const useSiteMetadata = (): SiteMetadata => {
                     youtubeUrl
                     spotifyUrl
                     linkedinUrl
+                    blogUrl
 
                     telephone
                     phoneRaw

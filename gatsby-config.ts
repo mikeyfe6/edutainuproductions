@@ -12,14 +12,15 @@ const siteMetadata = {
     facebookUrl: ``,
     instagramUrl: ``,
     tiktokUrl: ``,
-    youtubeUrl: ``,
+    youtubeUrl: `https://www.youtube.com/@otmarwatson8112`,
     spotifyUrl: ``,
-    linkedinUrl: ``,
+    linkedinUrl: `https://www.linkedin.com/in/otmar-watson-10831081/`,
+    blogUrl: `https://koemabala.blogspot.com/`,
 
     telephone: ``,
     phoneRaw: ``,
     mobile: ``,
-    email: ``,
+    email: `otmar.watson@gmail.com`,
 
     address: ``,
     postalCode: ``,
@@ -31,8 +32,8 @@ const siteMetadata = {
     btw: ``,
     bank: ``,
 
-    bgWebColor: ``,
-    bgThemeColor: ``,
+    bgWebColor: `#faa31b`,
+    bgThemeColor: `#be2026`,
 };
 
 const config: GatsbyConfig = {

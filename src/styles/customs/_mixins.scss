@@ -45,6 +45,8 @@
     text-decoration-thickness: $thickness;
     text-underline-offset: $offset;
 
+    @include smooth-trans;
+
     &:hover {
         text-decoration-thickness: 4px;
     }

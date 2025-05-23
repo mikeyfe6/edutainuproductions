@@ -6,9 +6,13 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { useSiteMetadata } from "../../hooks/use-site-metadata";
+
 import * as headerStyles from "../../styles/modules/layout/header.module.scss";
 
 const Header: React.FC = () => {
+    const { title, blogUrl, linkedinUrl, youtubeUrl } = useSiteMetadata();
+
     return (
         <header className={headerStyles.header}>
             <div className={headerStyles.hero}>
@@ -16,7 +20,7 @@ const Header: React.FC = () => {
                     <Link to="/">
                         <StaticImage
                             src="../../images/logo/eup-logo-trans.png"
-                            alt="Edutain U Productions Logo"
+                            alt={`${title} Logo`}
                         />
                     </Link>
                     <div>
@@ -25,12 +29,28 @@ const Header: React.FC = () => {
                                 <Link to="/">
                                     <StaticImage
                                         src="../../images/logo/eup-logo-trans.png"
-                                        alt="Edutain U Productions Logo"
+                                        alt={`${title} Logo`}
                                     />
                                 </Link>
                             </li>
                             <li>
-                                <a href="">
+                                <a
+                                    href={blogUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FontAwesomeIcon
+                                        icon={["fas", "blog"]}
+                                        size="xl"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href={linkedinUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <FontAwesomeIcon
                                         icon={["fab", "linkedin-in"]}
                                         size="xl"
@@ -38,7 +58,11 @@ const Header: React.FC = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a
+                                    href={youtubeUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <FontAwesomeIcon
                                         icon={["fab", "youtube"]}
                                         size="xl"
@@ -69,7 +93,7 @@ const Header: React.FC = () => {
                 </div>
 
                 <div className={headerStyles.intro}>
-                    <h1>Edutain U Productions</h1>
+                    <h1>{title}</h1>
                     <p>
                         <b>Welkom bij Edutain U Productions</b> waar educatie en
                         entertainment samenkomen voor impactvolle culturele
