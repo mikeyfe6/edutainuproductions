@@ -46,7 +46,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    gap: rem-calc(20);
+    gap: rem-calc(32);
 
     @include mobile {
         gap: rem-calc(48);
@@ -60,7 +60,7 @@
     h2 {
         background-color: $black;
         color: $white;
-        padding: rem-calc(20 28);
+        padding: rem-calc(20 24);
         margin-bottom: 0;
         width: 100%;
 
