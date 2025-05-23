@@ -6,7 +6,7 @@ const siteMetadata = {
     description: ``,
 
     siteUrl: `https://edutainuproductions.nl`,
-    image: `/eup-logo.jpeg`,
+    image: `/eup-logo.png`,
 
     twitterUsername: ``,
     facebookUrl: ``,
