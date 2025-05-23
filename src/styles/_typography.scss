@@ -145,27 +145,27 @@
 }
 
 h1 {
-    @include fluid-typing(36, 40);
+    @include fluid-typing(30, 40);
 }
 
 h2 {
-    @include fluid-typing(32, 36);
+    @include fluid-typing(26, 36);
 }
 
 h3 {
-    @include fluid-typing(30, 32);
+    @include fluid-typing(22, 32);
 }
 
 h4 {
-    @include fluid-typing(28, 30);
+    @include fluid-typing(20, 30);
 }
 
 h5 {
-    @include fluid-typing(26, 28);
+    @include fluid-typing(18, 28);
 }
 
 h6 {
-    @include fluid-typing(24, 26);
+    @include fluid-typing(16, 26);
 }
 
 h1,
@@ -175,7 +175,8 @@ h4,
 h5,
 h6 {
     margin-bottom: rem-calc(16);
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
 p {
