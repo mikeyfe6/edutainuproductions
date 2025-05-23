@@ -48,6 +48,11 @@ section {
     &#consultancy {
         padding-bottom: rem-calc(24);
     }
+
+    &#beleid,
+    &#voorwaarden {
+        padding-top: 0;
+    }
 }
 
 .responsive-tag {
@@ -72,4 +77,8 @@ section {
 b,
 strong {
     font-weight: 600;
+}
+
+u {
+    @include link;
 }

@@ -6,9 +6,13 @@ import axios from "axios";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { useSiteMetadata } from "../../hooks/use-site-metadata";
+
 import * as formStyles from "../../styles/modules/forms/form.module.scss";
 
 const Form: React.FC = () => {
+    const { email } = useSiteMetadata();
+
     const [formData, setFormData] = React.useState({
         firstName: "",
         lastName: "",
@@ -77,7 +81,7 @@ const Form: React.FC = () => {
                     <ul>
                         <li>
                             <a
-                                href="mailto:otmar.watson@gmail.com"
+                                href={`mailto:${email}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -87,7 +91,7 @@ const Form: React.FC = () => {
                                 />
 
                                 <span>·</span>
-                                <p>otmar.watson@gmail.com</p>
+                                <p>{email}</p>
                             </a>
                         </li>
                     </ul>
@@ -184,11 +188,11 @@ const Form: React.FC = () => {
                             />
                             <label htmlFor="formPrivacyPolicy">
                                 Ik ga akkoord met de{" "}
-                                <Link to="#terms-conditions">
+                                <Link to="/algemene-voorwaarden/#voorwaarden">
                                     algemene voorwaarden
                                 </Link>{" "}
                                 en{" "}
-                                <Link to="#privacy-policy">
+                                <Link to="/privacy-beleid/#beleid">
                                     privacy statement
                                 </Link>{" "}
                                 <span>*</span>

@@ -17,11 +17,7 @@
             @include fluid-typing(13, 16);
 
             .menefex {
-                &:hover {
-                    text-decoration: underline;
-                    text-decoration-color: $white;
-                    text-underline-offset: 5px;
-                }
+                @include link;
             }
         }
     }

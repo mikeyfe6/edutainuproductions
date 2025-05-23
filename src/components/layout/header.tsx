@@ -2,6 +2,8 @@ import * as React from "react";
 
 import { Link } from "gatsby";
 
+import { useLocation } from "@reach/router";
+
 import { StaticImage } from "gatsby-plugin-image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,6 +14,8 @@ import * as headerStyles from "../../styles/modules/layout/header.module.scss";
 
 const Header: React.FC = () => {
     const { title, blogUrl, linkedinUrl, youtubeUrl } = useSiteMetadata();
+
+    const { pathname } = useLocation();
 
     return (
         <header className={headerStyles.header}>
@@ -75,18 +79,28 @@ const Header: React.FC = () => {
 
                         <nav>
                             <ul>
-                                <li>
-                                    <a href="#biografie">Biografie</a>
-                                </li>
-                                <li>
-                                    <a href="#expertise">Expertise</a>
-                                </li>
-                                <li>
-                                    <a href="#consultancy">Consultancy</a>
-                                </li>
-                                <li>
-                                    <a href="#bun-tranga">Bun Tranga</a>
-                                </li>
+                                {pathname === "/" ? (
+                                    <>
+                                        <li>
+                                            <a href="#biografie">Biografie</a>
+                                        </li>
+                                        <li>
+                                            <a href="#expertise">Expertise</a>
+                                        </li>
+                                        <li>
+                                            <a href="#consultancy">
+                                                Consultancy
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#bun-tranga">Bun Tranga</a>
+                                        </li>
+                                    </>
+                                ) : (
+                                    <li>
+                                        <Link to="/">Home</Link>
+                                    </li>
+                                )}
                             </ul>
                         </nav>
                     </div>
@@ -109,34 +123,40 @@ const Header: React.FC = () => {
                         erfgoed en maatschappelijke betrokkenheid.
                     </p>
 
-                    <p>
-                        <b>
-                            Van theaterproducties tot festivals, van
-                            cultuureducatie tot internationale
-                            uitwisselingsprogramma’s:
-                        </b>{" "}
-                        Otmar Watson is inzetbaar als projectleider, producent,
-                        coach of conceptontwikkelaar. Otmar Watson voert
-                        opdrachten uit voor o.a. de Gemeente Amsterdam, Gemeente
-                        Rotterdam, culturele instellingen, scholen en grassroots
-                        organisaties.
-                    </p>
+                    {pathname === "/" && (
+                        <p>
+                            <b>
+                                Van theaterproducties tot festivals, van
+                                cultuureducatie tot internationale
+                                uitwisselingsprogramma’s:
+                            </b>{" "}
+                            Otmar Watson is inzetbaar als projectleider,
+                            producent, coach of conceptontwikkelaar. Otmar
+                            Watson voert opdrachten uit voor o.a. de Gemeente
+                            Amsterdam, Gemeente Rotterdam, culturele
+                            instellingen, scholen en grassroots organisaties.
+                        </p>
+                    )}
 
-                    <p>
-                        Met Edutain U Productions kies je voor een partner die
-                        visie koppelt aan daadkracht en creativiteit aan
-                        verantwoordelijkheid.
-                    </p>
+                    {pathname === "/" && (
+                        <p>
+                            Met Edutain U Productions kies je voor een partner
+                            die visie koppelt aan daadkracht en creativiteit aan
+                            verantwoordelijkheid.
+                        </p>
+                    )}
                 </div>
 
-                <div className={headerStyles.buttons}>
-                    <a href="#biografie" className={headerStyles.button}>
-                        Meer weten
-                    </a>
-                    <a href="#contact" className={headerStyles.button}>
-                        Contact
-                    </a>
-                </div>
+                {pathname === "/" && (
+                    <div className={headerStyles.buttons}>
+                        <a href="#biografie" className={headerStyles.button}>
+                            Meer weten
+                        </a>
+                        <a href="#contact" className={headerStyles.button}>
+                            Contact
+                        </a>
+                    </div>
+                )}
             </div>
 
             <div className={headerStyles.image}>

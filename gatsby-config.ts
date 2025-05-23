@@ -44,18 +44,26 @@ const config: GatsbyConfig = {
     // Learn more at: https://gatsby.dev/graphql-typegen
     graphqlTypegen: true,
     plugins: [
-        // {
-        //     resolve: "gatsby-plugin-google-tagmanager",
-        //     options: {
-        //         id: "",
-        //         includeInDevelopment: false,
-        //         defaultDataLayer: { platform: "gatsby" },
+        {
+            resolve: "gatsby-plugin-google-tagmanager",
+            options: {
+                id: "GTM-MJ4J8S4Q",
+                includeInDevelopment: false,
+                defaultDataLayer: { platform: "gatsby" },
 
-        //         // Specify optional GTM environment details.
-        //         // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-        //         // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        //     },
-        // },
+                // Specify optional GTM environment details.
+                // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+                // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "images",
+                path: "./src/images/",
+            },
+            __key: "images",
+        },
         {
             resolve: `gatsby-plugin-sass`,
             options: {
@@ -65,24 +73,41 @@ const config: GatsbyConfig = {
                 },
             },
         },
-        "gatsby-plugin-image",
-        "gatsby-plugin-sitemap",
         {
-            resolve: "gatsby-plugin-manifest",
+            resolve: `gatsby-plugin-nprogress`,
             options: {
-                icon: siteMetadata.image,
+                color: siteMetadata.bgThemeColor,
             },
         },
+        "gatsby-plugin-image",
         "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
+        "gatsby-plugin-sitemap",
+        "gatsby-plugin-robots-txt",
+        "gatsby-plugin-catch-links",
         {
-            resolve: "gatsby-source-filesystem",
+            resolve: `gatsby-plugin-canonical-urls`,
             options: {
-                name: "images",
-                path: "./src/images/",
+                siteUrl: siteMetadata.siteUrl,
             },
-            __key: "images",
         },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: siteMetadata.title,
+                short_name: siteMetadata.title,
+                start_url: `/`,
+                background_color: siteMetadata.bgWebColor,
+                theme_color: siteMetadata.bgThemeColor,
+                display: `standalone`,
+                crossOrigin: "use-credentials",
+                icon: "src/images/favicon/icon.png",
+                icon_options: {
+                    purpose: `any maskable`,
+                },
+            },
+        },
+        "gatsby-plugin-offline",
     ],
 };
 

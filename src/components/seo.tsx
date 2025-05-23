@@ -31,7 +31,6 @@ export const Seo: React.FC<SEOProps> = ({
     } = useSiteMetadata();
 
     const seo = {
-        // title: title ? `${title} · ${siteTitle}` : `${siteTitle} · ${slogan}`,
         title: title ? `${title} · ${siteTitle}` : `${siteTitle}`,
         description: description ?? defaultDescription,
         image: `${siteUrl}${image}`,
