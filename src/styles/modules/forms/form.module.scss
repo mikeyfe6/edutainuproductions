@@ -39,7 +39,7 @@
         > form {
             display: flex;
             flex-direction: column;
-            max-width: rem-calc(700);
+            max-width: rem-calc(600);
             width: 100%;
             gap: rem-calc(24);
             position: relative;
@@ -50,6 +50,10 @@
 
             @include phablet {
                 padding: rem-calc(48);
+            }
+
+            @include laptop {
+                max-width: rem-calc(700);
             }
 
             > div {
@@ -90,7 +94,7 @@
                 }
 
                 > textarea {
-                    margin-bottom: rem-calc(20);
+                    margin-bottom: rem-calc(16);
                 }
 
                 > div {
