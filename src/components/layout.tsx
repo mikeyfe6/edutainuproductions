@@ -1,7 +1,11 @@
 import * as React from "react";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faPaperPlane, faBlog } from "@fortawesome/free-solid-svg-icons";
+import {
+    faPaperPlane,
+    faBlog,
+    faEnvelopesBulk,
+} from "@fortawesome/free-solid-svg-icons";
 import {
     faGem,
     faFileLines,
@@ -25,7 +29,8 @@ library.add(
     faComments,
     faLightbulb,
     faHandshake,
-    faBlog
+    faBlog,
+    faEnvelopesBulk
 );
 
 import Header from "./layout/header";

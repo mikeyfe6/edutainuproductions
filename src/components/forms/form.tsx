@@ -88,7 +88,7 @@ const Form: React.FC = () => {
 
             setTimeout(() => {
                 setShowSuccessMessage(false);
-            }, 3000);
+            }, 10000);
         } catch (error) {
             console.error("Form submission error:", error);
             alert("Er is iets misgegaan bij het versturen van het formulier.");
@@ -114,10 +114,9 @@ const Form: React.FC = () => {
                                 rel="noopener noreferrer"
                             >
                                 <FontAwesomeIcon
-                                    icon={["fas", "paper-plane"]}
+                                    icon={["fas", "envelopes-bulk"]}
                                     size="lg"
                                 />
-
                                 <span>·</span>
                                 <p>{email}</p>
                             </a>
@@ -248,7 +247,15 @@ const Form: React.FC = () => {
                     </div>
 
                     <div className={formStyles.submit}>
-                        {showSuccessMessage && <span>Bericht verzonden!</span>}
+                        {showSuccessMessage && (
+                            <span>
+                                Bericht verzonden!
+                                <FontAwesomeIcon
+                                    icon={["fas", "paper-plane"]}
+                                    size="lg"
+                                />
+                            </span>
+                        )}
 
                         <button type="submit" disabled={!isFormValid}>
                             {isSubmitting ? "Versturen ..." : "Versturen"}

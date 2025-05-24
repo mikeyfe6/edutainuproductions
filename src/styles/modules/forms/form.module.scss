@@ -167,6 +167,9 @@
                 margin-top: rem-calc(24);
 
                 span {
+                    display: flex;
+                    align-items: center;
+                    gap: rem-calc(10);
                     font-weight: 600;
                     color: $secondary;
                 }
