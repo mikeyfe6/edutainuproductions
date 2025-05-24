@@ -181,6 +181,7 @@
                 button {
                     align-self: flex-end;
                     margin-left: auto;
+                    margin-bottom: rem-calc(12);
 
                     @include button;
                 }
