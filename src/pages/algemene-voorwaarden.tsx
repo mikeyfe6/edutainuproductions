@@ -13,10 +13,12 @@ const TermsPage: React.FC<PageProps> = () => {
                 <h2>Algemene Voorwaarden – Edutain U Productions</h2>
                 <p>
                     Laatst bijgewerkt: mei 2025 <br />
-                    Edutain U Productions levert creatieve diensten zoals
-                    videoproducties, educatieve content en media-advies op maat.
-                    Alle afspraken, offertes en samenwerkingen zijn onder
-                    voorbehoud van wederzijdse goedkeuring.
+                    Edutain U Productions, onder leiding van Otmar Watson,
+                    levert creatieve en educatieve diensten op het snijvlak van
+                    kunst, cultuur en empowerment. Denk aan projectontwikkeling,
+                    culturele evenementen, coaching, strategisch advies en
+                    cultuureducatie. Alle opdrachten worden uitgevoerd op basis
+                    van onderling overeengekomen afspraken.
                 </p>
                 <br />
                 <h3>Belangrijke punten:</h3>
@@ -28,22 +30,24 @@ const TermsPage: React.FC<PageProps> = () => {
                         - Betalingstermijn: binnen 14 dagen na factuurdatum.
                     </li>
                     <li>
-                        - Gemaakte content blijft eigendom van Edutain U
-                        Productions totdat volledige betaling is ontvangen.
+                        - Gemaakte concepten, voorstellen en content blijven
+                        eigendom van Edutain U Productions totdat volledige
+                        betaling is ontvangen.
                     </li>
                     <li>
-                        - Annuleren kan kosteloos tot 48 uur voor aanvang van
-                        een opdracht. Daarna kunnen kosten in rekening worden
-                        gebracht.
+                        - Annuleren van een opdracht kan kosteloos tot 48 uur
+                        voor aanvang. Daarna kunnen annuleringskosten worden
+                        gerekend.
                     </li>
                     <li>
-                        - Bij vragen of klachten zoeken we altijd samen naar een
-                        oplossing.
+                        - Bij samenwerking staat transparantie en wederzijds
+                        respect centraal. Vragen of klachten worden in goed
+                        overleg opgelost.
                     </li>
                 </ul>
                 <small>
-                    Bij vragen of klachten zoeken we altijd samen naar een
-                    oplossing.
+                    Voor vragen over deze voorwaarden kun je altijd contact
+                    opnemen met Edutain U Productions via het contactformulier.
                 </small>
                 <br />
                 <Link to="/">

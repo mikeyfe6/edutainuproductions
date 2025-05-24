@@ -263,6 +263,15 @@
                     flex: 20%;
                 }
 
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                }
+
+                &:has(a[href="#!"]) {
+                    pointer-events: none;
+                }
+
                 a {
                     display: block;
                     padding: rem-calc(12);
@@ -272,11 +281,6 @@
                     @include tablet {
                         padding: rem-calc(20 32);
                     }
-                }
-
-                &:hover {
-                    background-color: $black;
-                    color: $white;
                 }
 
                 b {

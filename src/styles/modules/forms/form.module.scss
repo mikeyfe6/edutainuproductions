@@ -111,6 +111,7 @@
                             position: relative;
                             padding-left: rem-calc(36);
                             min-height: rem-calc(25);
+                            cursor: pointer;
 
                             span {
                                 color: $secondary;
@@ -157,11 +158,25 @@
                 }
             }
 
-            button {
+            .submit {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: rem-calc(24);
                 margin-top: rem-calc(24);
-                align-self: flex-end;
 
-                @include button;
+                span {
+                    font-weight: 600;
+                    color: $secondary;
+                }
+
+                button {
+                    align-self: flex-end;
+                    margin-left: auto;
+
+                    @include button;
+                }
             }
         }
     }

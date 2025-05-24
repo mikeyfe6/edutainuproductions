@@ -173,19 +173,31 @@ const IndexPage: React.FC<PageProps> = () => {
                     <h2>Trackrecord</h2>
                     <ul>
                         <li>
-                            <a href="#!">
+                            <a
+                                href="https://untold.nl"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
                                 <b>Directeur en artistiek leider</b> Stichting
                                 Untold
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a
+                                href="https://eternitydrum.com"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
                                 <b>Zakelijk leider</b> Stichting Eternity
                                 Percussion
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a
+                                href="https://www.blackachievementmonth.nl"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
                                 <b>Programmeur & projectleider</b> Black
                                 Achievement Month
                             </a>
@@ -196,13 +208,21 @@ const IndexPage: React.FC<PageProps> = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a
+                                href="https://vivell.nl"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
                                 <b>Coördinator Kwaliteit en Ontwikkeling</b>{" "}
                                 Vivell
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a
+                                href="https://www.amsterdam.nl"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
                                 <b>
                                     Lid Stuurgroep Regisseur Kunst & Cultuur
                                     Zuidoost
@@ -211,33 +231,57 @@ const IndexPage: React.FC<PageProps> = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a
+                                href="https://www.rotterdam.nl"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
                                 <b>Commissielid Adviescommissie Cultuur</b>{" "}
                                 Gemeente Rotterdam
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a
+                                href="https://www.lkca.nl"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
                                 <b>Redactielid</b> Cultuurkrant NL
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a
+                                href="https://broos.institute/nl"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
                                 <b>Bestuurslid</b> Broos Instituut
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a
+                                href="https://www.theatervoorketikoti.nl"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
                                 <b>Bestuurslid</b> Theater voor Keti Koti
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a
+                                href="https://tolhuistuin.nl"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
                                 <b>Bestuurslid</b> Tolhuistuin
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a
+                                href="https://www.bijlmerparktheater.nl"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
                                 <b>Projectleider In The Picture Festival</b>{" "}
                                 Bijlmer Parktheater
                             </a>
@@ -254,13 +298,21 @@ const IndexPage: React.FC<PageProps> = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a
+                                href="https://eternitydrum.com"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
                                 <b>Mede-oprichter </b> Stichting Eternity
                                 Percussion
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a
+                                href="https://untold.nl"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
                                 <b>Oprichter</b> Stichting Untold
                             </a>
                         </li>

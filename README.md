@@ -1,9 +1,9 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
 <p align="center">
-  <a href="https://edutainuproductions.netlify.app" rel="noopener noreferrer"
+  <a href="https://edutainuproductions.nl" rel="noopener noreferrer"
               target="_blank">
-    <img alt="Edutain U Productions Logo" src="https://edutainuproductions.netlify.app/eup-logo.jpeg" width="500" />
+    <img alt="Edutain U Productions Logo" src="https://edutainuproductions.netlify.app/eup-logo.png" width="500" />
   </a>
 </p>
 
@@ -17,7 +17,7 @@ Deze website is gebouwd door [Michael Fransman](https://www.linkedin.com/in/mich
 
 <!-- ‘Keep It Real’ is een sociaal-maatschappelijk project waarbij ervaringsdeskundige interactief aan de slag gaan met jongeren om levenslessen te leren. -->
 
--   _Meer weten? Bekijk de website / check the website: [Edutain U Productions](https://edutainuproductions.netlify.app)_
+-   _Meer weten? Bekijk de website / check the website: [Edutain U Productions](https://edutainuproductions.nl)_
 
 <br>
 

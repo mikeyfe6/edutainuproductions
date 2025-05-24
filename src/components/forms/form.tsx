@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { navigate, Link } from "gatsby";
+import { Link } from "gatsby";
 
 import axios from "axios";
 
@@ -23,6 +23,18 @@ const Form: React.FC = () => {
     });
 
     const [isSubmitting, setIsSubmitting] = React.useState(false);
+    const [isPrivacyChecked, setIsPrivacyChecked] = React.useState(false);
+    const [isTermsChecked, setIsTermsChecked] = React.useState(false);
+    const [showSuccessMessage, setShowSuccessMessage] = React.useState(false);
+
+    const isFormValid =
+        formData.firstName.trim() !== "" &&
+        formData.lastName.trim() !== "" &&
+        formData.email.trim() !== "" &&
+        formData.message.trim() !== "" &&
+        isPrivacyChecked &&
+        isTermsChecked &&
+        !isSubmitting;
 
     const handleChange = (
         event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -60,7 +72,23 @@ const Form: React.FC = () => {
                 },
             });
 
-            navigate("/success/");
+            setShowSuccessMessage(true);
+
+            setFormData({
+                firstName: "",
+                lastName: "",
+                company: "",
+                phone: "",
+                email: "",
+                message: "",
+            });
+
+            setIsPrivacyChecked(false);
+            setIsTermsChecked(false);
+
+            setTimeout(() => {
+                setShowSuccessMessage(false);
+            }, 3000);
         } catch (error) {
             console.error("Form submission error:", error);
             alert("Er is iets misgegaan bij het versturen van het formulier.");
@@ -185,6 +213,10 @@ const Form: React.FC = () => {
                                 type="checkbox"
                                 id="formPrivacyPolicy"
                                 required
+                                checked={isPrivacyChecked}
+                                onChange={(e) =>
+                                    setIsPrivacyChecked(e.target.checked)
+                                }
                             />
                             <label htmlFor="formPrivacyPolicy">
                                 Ik ga akkoord met de{" "}
@@ -203,6 +235,10 @@ const Form: React.FC = () => {
                                 type="checkbox"
                                 id="formTermsAndConditions"
                                 required
+                                checked={isTermsChecked}
+                                onChange={(e) =>
+                                    setIsTermsChecked(e.target.checked)
+                                }
                             />
                             <label htmlFor="formTermsAndConditions">
                                 Ik ga akkoord met de verwerking van mijn
@@ -211,9 +247,13 @@ const Form: React.FC = () => {
                         </div>
                     </div>
 
-                    <button type="submit" disabled={isSubmitting}>
-                        {isSubmitting ? "Versturen ..." : "Versturen"}
-                    </button>
+                    <div className={formStyles.submit}>
+                        {showSuccessMessage && <span>Bericht verzonden!</span>}
+
+                        <button type="submit" disabled={!isFormValid}>
+                            {isSubmitting ? "Versturen ..." : "Versturen"}
+                        </button>
+                    </div>
                 </form>
             </div>
         </section>

@@ -11,7 +11,7 @@
         justify-content: space-between;
         align-items: center;
 
-        @include container($pT: rem-calc(12), $pB: rem-calc(12));
+        @include container($pT: rem-calc(16), $pB: rem-calc(16));
 
         span {
             @include fluid-typing(13, 16);

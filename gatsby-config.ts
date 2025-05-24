@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const siteMetadata = {
     title: `Edutain U Productions`,
     slogan: ``,
-    description: ``,
+    description: `Edutain U Productions is het creatieve freelancebedrijf van Otmar Watson, actief op het snijvlak van kunst, cultuur, erfgoed en empowerment. Vanuit jarenlange ervaring binnen de culturele sector realiseert Edutain U Productions projecten die verbinden, verdiepen en versterken.`,
 
     siteUrl: `https://edutainuproductions.nl`,
     image: `/eup-logo.png`,
@@ -15,7 +15,7 @@ const siteMetadata = {
     youtubeUrl: `https://www.youtube.com/@otmarwatson8112`,
     spotifyUrl: ``,
     linkedinUrl: `https://www.linkedin.com/in/otmar-watson-10831081/`,
-    blogUrl: `https://koemabala.blogspot.com/`,
+    blogUrl: `https://koemabala.blogspot.com`,
 
     telephone: ``,
     phoneRaw: ``,
