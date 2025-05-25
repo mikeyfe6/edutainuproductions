@@ -12,7 +12,7 @@ const TermsPage: React.FC<PageProps> = () => {
             <section id="voorwaarden">
                 <h2>Algemene Voorwaarden – Edutain U Productions</h2>
                 <p>
-                    Laatst bijgewerkt: mei 2025 <br />
+                    Laatst bijgewerkt: mei 2025 <br /><br />
                     Edutain U Productions, onder leiding van Otmar Watson,
                     levert creatieve en educatieve diensten op het snijvlak van
                     kunst, cultuur en empowerment. Denk aan projectontwikkeling,
