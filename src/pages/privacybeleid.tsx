@@ -47,5 +47,5 @@ const PrivacyPage: React.FC<PageProps> = () => {
 export default PrivacyPage;
 
 export const Head: HeadFC = () => (
-    <Seo title="Privacybeleid" pathname="/privacy-beleid/" noindex />
+    <Seo title="Privacybeleid" pathname="/privacybeleid/" noindex />
 );

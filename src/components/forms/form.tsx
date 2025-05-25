@@ -223,7 +223,7 @@ const Form: React.FC = () => {
                                     algemene voorwaarden
                                 </Link>{" "}
                                 en{" "}
-                                <Link to="/privacy-beleid/#beleid">
+                                <Link to="/privacybeleid/#beleid">
                                     privacy statement
                                 </Link>{" "}
                                 <span>*</span>
