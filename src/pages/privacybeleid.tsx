@@ -12,8 +12,7 @@ const PrivacyPage: React.FC<PageProps> = () => {
             <section id="beleid">
                 <h2>Privacyverklaring – Edutain U Productions</h2>
                 <p>
-                    Laatst bijgewerkt: mei 2025 <br />
-                    <br />
+                    Laatst bijgewerkt: mei 2025 <br /><br />
                     Bij Edutain U Productions respecteren we jouw privacy. We
                     verzamelen alleen de noodzakelijke gegevens via het
                     contactformulier (zoals je naam en e-mailadres) om contact
