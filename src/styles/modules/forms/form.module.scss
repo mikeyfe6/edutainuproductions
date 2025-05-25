@@ -27,7 +27,15 @@
                 a {
                     display: flex;
                     align-items: center;
-                    gap: rem-calc(20);
+                    gap: rem-calc(16);
+
+                    @include mobile {
+                        gap: rem-calc(20);
+                    }
+
+                    span {
+                        font-weight: 600;
+                    }
 
                     p {
                         @include link;

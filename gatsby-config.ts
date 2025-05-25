@@ -33,7 +33,7 @@ const siteMetadata = {
     bank: ``,
 
     bgWebColor: `#faa31b`,
-    bgThemeColor: `#be2026`,
+    bgThemeColor: `#1d1d1d`,
 };
 
 const config: GatsbyConfig = {
