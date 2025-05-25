@@ -179,7 +179,11 @@ const IndexPage: React.FC<PageProps> = () => {
                                 rel="noreferrer noopener"
                             >
                                 <b>Directeur en artistiek leider</b> Stichting
-                                Untold
+                                Untold{" "}
+                                <FontAwesomeIcon
+                                    icon={["fas", "square-arrow-up-right"]}
+                                    size="xs"
+                                />
                             </a>
                         </li>
                         <li>
@@ -189,7 +193,11 @@ const IndexPage: React.FC<PageProps> = () => {
                                 rel="noreferrer noopener"
                             >
                                 <b>Zakelijk leider</b> Stichting Eternity
-                                Percussion
+                                Percussion{" "}
+                                <FontAwesomeIcon
+                                    icon={["fas", "square-arrow-up-right"]}
+                                    size="xs"
+                                />
                             </a>
                         </li>
                         <li>
@@ -199,7 +207,11 @@ const IndexPage: React.FC<PageProps> = () => {
                                 rel="noreferrer noopener"
                             >
                                 <b>Programmeur & projectleider</b> Black
-                                Achievement Month
+                                Achievement Month{" "}
+                                <FontAwesomeIcon
+                                    icon={["fas", "square-arrow-up-right"]}
+                                    size="xs"
+                                />
                             </a>
                         </li>
                         <li>
@@ -214,7 +226,11 @@ const IndexPage: React.FC<PageProps> = () => {
                                 rel="noreferrer noopener"
                             >
                                 <b>Coördinator Kwaliteit en Ontwikkeling</b>{" "}
-                                Vivell
+                                Vivell{" "}
+                                <FontAwesomeIcon
+                                    icon={["fas", "square-arrow-up-right"]}
+                                    size="xs"
+                                />
                             </a>
                         </li>
                         <li>
@@ -227,7 +243,11 @@ const IndexPage: React.FC<PageProps> = () => {
                                     Lid Stuurgroep Regisseur Kunst & Cultuur
                                     Zuidoost
                                 </b>{" "}
-                                Gemeente Amsterdam
+                                Gemeente Amsterdam{" "}
+                                <FontAwesomeIcon
+                                    icon={["fas", "square-arrow-up-right"]}
+                                    size="xs"
+                                />
                             </a>
                         </li>
                         <li>
@@ -237,7 +257,11 @@ const IndexPage: React.FC<PageProps> = () => {
                                 rel="noreferrer noopener"
                             >
                                 <b>Commissielid Adviescommissie Cultuur</b>{" "}
-                                Gemeente Rotterdam
+                                Gemeente Rotterdam{" "}
+                                <FontAwesomeIcon
+                                    icon={["fas", "square-arrow-up-right"]}
+                                    size="xs"
+                                />
                             </a>
                         </li>
                         <li>
@@ -246,7 +270,11 @@ const IndexPage: React.FC<PageProps> = () => {
                                 target="_blank"
                                 rel="noreferrer noopener"
                             >
-                                <b>Redactielid</b> Cultuurkrant NL
+                                <b>Redactielid</b> Cultuurkrant NL{" "}
+                                <FontAwesomeIcon
+                                    icon={["fas", "square-arrow-up-right"]}
+                                    size="xs"
+                                />
                             </a>
                         </li>
                         <li>
@@ -255,7 +283,11 @@ const IndexPage: React.FC<PageProps> = () => {
                                 target="_blank"
                                 rel="noreferrer noopener"
                             >
-                                <b>Bestuurslid</b> Broos Instituut
+                                <b>Bestuurslid</b> Broos Instituut{" "}
+                                <FontAwesomeIcon
+                                    icon={["fas", "square-arrow-up-right"]}
+                                    size="xs"
+                                />
                             </a>
                         </li>
                         <li>
@@ -264,7 +296,11 @@ const IndexPage: React.FC<PageProps> = () => {
                                 target="_blank"
                                 rel="noreferrer noopener"
                             >
-                                <b>Bestuurslid</b> Theater voor Keti Koti
+                                <b>Bestuurslid</b> Theater voor Keti Koti{" "}
+                                <FontAwesomeIcon
+                                    icon={["fas", "square-arrow-up-right"]}
+                                    size="xs"
+                                />
                             </a>
                         </li>
                         <li>
@@ -273,7 +309,11 @@ const IndexPage: React.FC<PageProps> = () => {
                                 target="_blank"
                                 rel="noreferrer noopener"
                             >
-                                <b>Bestuurslid</b> Tolhuistuin
+                                <b>Bestuurslid</b> Tolhuistuin{" "}
+                                <FontAwesomeIcon
+                                    icon={["fas", "square-arrow-up-right"]}
+                                    size="xs"
+                                />
                             </a>
                         </li>
                         <li>
@@ -283,7 +323,11 @@ const IndexPage: React.FC<PageProps> = () => {
                                 rel="noreferrer noopener"
                             >
                                 <b>Projectleider In The Picture Festival</b>{" "}
-                                Bijlmer Parktheater
+                                Bijlmer Parktheater{" "}
+                                <FontAwesomeIcon
+                                    icon={["fas", "square-arrow-up-right"]}
+                                    size="xs"
+                                />
                             </a>
                         </li>
                         <li>
@@ -304,7 +348,11 @@ const IndexPage: React.FC<PageProps> = () => {
                                 rel="noreferrer noopener"
                             >
                                 <b>Mede-oprichter </b> Stichting Eternity
-                                Percussion
+                                Percussion{" "}
+                                <FontAwesomeIcon
+                                    icon={["fas", "square-arrow-up-right"]}
+                                    size="xs"
+                                />
                             </a>
                         </li>
                         <li>
@@ -313,7 +361,11 @@ const IndexPage: React.FC<PageProps> = () => {
                                 target="_blank"
                                 rel="noreferrer noopener"
                             >
-                                <b>Oprichter</b> Stichting Untold
+                                <b>Oprichter</b> Stichting Untold{" "}
+                                <FontAwesomeIcon
+                                    icon={["fas", "square-arrow-up-right"]}
+                                    size="xs"
+                                />
                             </a>
                         </li>
                         <li>

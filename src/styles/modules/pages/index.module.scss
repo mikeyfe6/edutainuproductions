@@ -275,8 +275,10 @@
                 a {
                     display: block;
                     padding: rem-calc(12);
-                    height: 100%;
                     width: 100%;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
 
                     @include mobile {
                         padding: rem-calc(16 24);
@@ -284,6 +286,12 @@
 
                     @include laptop {
                         padding: rem-calc(20 32);
+                    }
+
+                    svg {
+                        vertical-align: 4px !important;
+                        margin-left: rem-calc(2);
+                        color: $secondary;
                     }
                 }
 

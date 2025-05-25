@@ -5,6 +5,7 @@ import {
     faPaperPlane,
     faBlog,
     faEnvelopesBulk,
+    faSquareArrowUpRight,
 } from "@fortawesome/free-solid-svg-icons";
 import {
     faGem,
@@ -30,7 +31,8 @@ library.add(
     faLightbulb,
     faHandshake,
     faBlog,
-    faEnvelopesBulk
+    faEnvelopesBulk,
+    faSquareArrowUpRight
 );
 
 import Header from "./layout/header";
