@@ -80,7 +80,14 @@ const config: GatsbyConfig = {
             },
         },
         "gatsby-plugin-image",
-        "gatsby-plugin-sharp",
+        {
+            resolve: `gatsby-plugin-sharp`,
+            options: {
+                defaults: {
+                    placeholder: `blurred`,
+                },
+            },
+        },
         "gatsby-transformer-sharp",
         "gatsby-plugin-sitemap",
         "gatsby-plugin-robots-txt",
