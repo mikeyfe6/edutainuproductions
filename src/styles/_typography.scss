@@ -201,3 +201,12 @@ small {
     display: block;
     margin-bottom: rem-calc(16);
 }
+
+b,
+strong {
+    font-weight: 600;
+}
+
+u {
+    @include link;
+}

@@ -73,12 +73,3 @@ section {
         font-weight: bold;
     }
 }
-
-b,
-strong {
-    font-weight: 600;
-}
-
-u {
-    @include link;
-}
