@@ -181,6 +181,7 @@
 }
 
 .consultancy {
+    /* stylelint-disable-next-line no-descending-specificity */
     > div {
         display: flex;
         flex-direction: column;
@@ -246,6 +247,7 @@
             flex-wrap: wrap;
             gap: rem-calc(20);
 
+            /* stylelint-disable-next-line no-descending-specificity */
             li {
                 position: relative;
                 background-color: $white;
@@ -277,6 +279,7 @@
                     pointer-events: none;
                 }
 
+                /* stylelint-disable-next-line no-descending-specificity */
                 a {
                     display: block;
                     padding: rem-calc(12);
@@ -292,6 +295,7 @@
                         padding: rem-calc(16 24);
                     }
 
+                    /* stylelint-disable-next-line no-descending-specificity */
                     svg {
                         position: absolute;
                         bottom: rem-calc(-1.5);
@@ -310,6 +314,7 @@
 }
 
 .fraternity {
+    /* stylelint-disable-next-line no-descending-specificity */
     > div {
         padding: rem-calc(12 20);
         border: 2px solid $black;

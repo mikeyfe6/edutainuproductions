@@ -73,6 +73,10 @@
                     display: none;
                 }
 
+                > textarea {
+                    margin-bottom: rem-calc(16);
+                }
+
                 > input:not([type="checkbox"]),
                 > textarea {
                     width: 100%;
@@ -95,14 +99,11 @@
                     }
                 }
 
+                /* stylelint-disable-next-line no-descending-specificity */
                 > input:not(:placeholder-shown),
                 > textarea:not(:placeholder-shown) {
                     border-bottom: 4px solid $black;
                     padding-bottom: rem-calc(12);
-                }
-
-                > textarea {
-                    margin-bottom: rem-calc(16);
                 }
 
                 > div {
@@ -178,6 +179,7 @@
                 gap: rem-calc(24);
                 margin-top: rem-calc(24);
 
+                /* stylelint-disable-next-line no-descending-specificity */
                 span {
                     display: flex;
                     align-items: center;

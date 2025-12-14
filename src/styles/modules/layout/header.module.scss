@@ -150,6 +150,7 @@
                             padding: rem-calc(4);
                             text-align: right;
 
+                            /* stylelint-disable-next-line no-descending-specificity */
                             a {
                                 font-weight: 600;
                                 white-space: nowrap;

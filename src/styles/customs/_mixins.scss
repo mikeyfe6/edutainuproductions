@@ -78,7 +78,12 @@
     touch-action: manipulation;
     color: $white;
     font-weight: 500;
-    border: 2px solid if($type == 1, $black, $white);
+
+    @if $type == 1 {
+        border: 2px solid $black;
+    } @else {
+        border: 2px solid $white;
+    }
 
     @include fluid-typing(18, 20);
 
